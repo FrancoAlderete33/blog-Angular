@@ -1,0 +1,124 @@
+<app-carrusel></app-carrusel>
+<!-- ============================================
+  ===================== MAIN =================== -->
+<main class="py-3 mb-3">
+  <div class="container">
+    <div class="row">
+
+      <!-- POSTS -->
+      <div class="col-md-9">
+        <!-- Spider-Man -->
+        <div class="card flex-md-row mb-4 border-light shadow-sm h-md-250">
+          <img class="card-img-left flex-auto d-none d-md-block" width="300px" height="200"
+            src="../../assets/MySQL3.png" alt="Card image cap">
+          <div class="card-body d-flex flex-column align-items-start">
+            <h3 class="card-title mb-2 text-info">MySQL</h3>
+            <p class="card-text mb-auto ">
+              Es un sistema de gestión de bases de datos relacionales que se ha convertido en uno de los motores
+              de base de
+              datos más populares del mundo. Es una tecnología esencial para cualquier sitio web que requiera
+              almacenamiento de datos,
+              ya sea un blog personal, un sitio de comercio electrónico o una aplicación de redes sociales.
+            </p>
+            <a [routerLink]="['/post-1']" class="btn btn-outline-info mt-2 ">Leer más</a>
+          </div>
+        </div>
+        <!-- Lego Batman -->
+        <div class="card flex-md-row mb-4 border-light shadow-sm h-md-250">
+          <img class="card-img-left flex-auto d-none d-md-block" width="300" height="150"
+            src="../../assets/Angular2.png" alt="Card image cap">
+          <div class="card-body d-flex flex-column align-items-start">
+            <h3 class="card-title mb-2 text-danger">Angular</h3>
+            <p class="card-text mb-auto">
+              Es un framework de desarrollo web en JavaScript que se utiliza para crear aplicaciones web y
+              móviles. Fue creado
+              por Google y se basa en el patrón de arquitectura de software Modelo-Vista-Controlador (MVC), lo que
+              lo
+              hace muy
+              estructurado y escalable. Angular se enfoca en la creación de aplicaciones de una sola página (Single
+              Page
+              Applications
+              - SPA) y utiliza HTML, CSS y TypeScript. Ofrece muchas características útiles como enrutamiento,
+              manejo de
+              formularios,
+              comunicación con servidores, animaciones y mucho más. Además, Angular tiene una gran comunidad de
+              desarrolladores y está
+              respaldado por Google, lo que lo convierte en una opción popular para el desarrollo de aplicaciones
+              web.
+            </p>
+            <a [routerLink]="['/post-2']" class="btn btn-outline-info mt-2 ">Leer más</a>
+          </div>
+        </div>
+        <!-- Black Panther -->
+        <div class="card flex-md-row mb-4 border-light shadow-sm h-md-250">
+          <img class="card-img-left flex-auto d-none d-md-block" width="450" height="250"
+            src="../../assets/nodejs-45adbe594d.png" alt="Card image cap">
+          <div class="card-body d-flex flex-column align-items-start">
+            <h3 class="card-title mb-2 text-primary ">Node JS</h3>
+            <p class="card-text mb-auto">
+              Node.js es un entorno de tiempo de ejecución de JavaScript que permite ejecutar código JavaScript en el
+              lado del
+              servidor. Fue creado en 2009 por Ryan Dahl y se basa en el motor JavaScript V8 de Google Chrome.
+
+              Node.js utiliza un modelo de E/S sin bloqueo y orientado a eventos que lo hace adecuado para aplicaciones
+              en tiempo real
+              y de alta concurrencia que deben manejar una gran cantidad de solicitudes simultáneas. Esto significa que
+              en lugar de
+              esperar a que una operación de E/S se complete antes de continuar con la siguiente, Node.js puede manejar
+              múltiples
+              solicitudes simultáneamente y realizar otras tareas mientras espera a que se complete una operación de
+              E/S.
+
+              Node.js también cuenta con una amplia biblioteca de módulos que permiten a los desarrolladores agregar
+              funcionalidades a
+              sus aplicaciones de manera sencilla, como la creación de servidores web, la conexión a bases de datos, el
+              procesamiento
+              de archivos y la manipulación de streams.
+
+              En resumen, Node.js es una herramienta muy útil para desarrollar aplicaciones de servidor escalables y de
+              alto
+              rendimiento con JavaScript.
+            </p>
+            <a [routerLink]="['/post-3']" class="btn btn-outline-info mt-2 ">Leer más</a>
+          </div>
+        </div>
+      </div>
+      <!-- /col-md-9 -->
+
+      <!-- ============================================
+        ==================== ASIDE =================== -->
+      <div class="col-md-3 mx-auto mb-3 text-center">
+        <div class="blog-sidebar p-2 shadow-sm rounded">
+          <!-- About -->
+          <h2>Sobre Mi</h2>
+          <img src="https://res.cloudinary.com/dfog0e294/image/upload/v1547038232/webdev/Blog/user.png"
+            class="img-fluid rounded-circle" width="150" alt="Rob Smith">
+          <h4>Franco Alderete</h4>
+          <p>
+            Soy un desarrollador junior apasionado por la programación y estoy emocionado de compartir mi
+            conocimiento y
+            experiencia contigo. Me encanta trabajar en equipo para resolver problemas complejos y crear soluciones
+            innovadoras.
+
+            Como desarrollador, estoy constantemente aprendiendo nuevas habilidades y tecnologías para mantenerme
+            actualizado en un
+            campo que evoluciona rápidamente. Me gusta abordar nuevos desafíos y enfrentar problemas difíciles, lo
+            que
+            me permite
+            crecer como profesional y encontrar formas creativas de abordar problemas de programación.
+
+            En resumen, mi pasión por la programación me impulsa a mejorar constantemente y a encontrar soluciones
+            innovadoras para
+            problemas complejos. Estoy ansioso por continuar aprendiendo y creciendo en mi carrera como
+            desarrollador.
+          </p>
+        </div>
+
+      </div>
+      <!-- /blog-aside -->
+
+    </div>
+    <!-- /row -->
+  </div>
+  <!-- /container -->
+</main>
