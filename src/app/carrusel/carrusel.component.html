@@ -3,3 +3,51 @@
     Bienvenidos al blog✌
   </div>
 </div>
+
+
+<!-- We will make a simple accordian with hover effects 
+The markup will have a list with images and the titles-->
+<div class="accordian">
+  <ul>
+    <li>
+      <div class="image_title">
+        <a [routerLink]="['/post-1']">MySQL</a>
+      </div>
+      <a [routerLink]="['/post-1']">
+        <img height="325px" src="../../assets/mysql_logo_icon.png" />
+      </a>
+    </li>
+    <li>
+      <div class="image_title">
+        <a [routerLink]="['/post-2']">Node JS</a>
+      </div>
+      <a [routerLink]="['/post-2']">
+        <img height="325px" width="600px" src="../../assets/basesDatos (1).jpg" />
+      </a>
+    </li>
+    <li>
+      <div class="image_title">
+        <a [routerLink]="['/post-3']">Angular</a>
+      </div>
+      <a [routerLink]="['/post-3']">
+        <img height="325px" width="600px" src="../../assets/Angular-material.jpg" />
+      </a>
+    </li>
+    <li>
+      <div class="image_title">
+        <a [routerLink]="['/post-4']">.NET</a>
+      </div>
+      <a [routerLink]="['/post-4']">
+        <img height="325px" width="600px" src="../../assets/CheatSheet LINQ.jpg" />
+      </a>
+    </li>
+    <li>
+      <div class="image_title">
+        <a [routerLink]="['/post-5']">CSS</a>
+      </div>
+      <a [routerLink]="['/post-5']">
+        <img height="325px" width="640px" src="../../assets/MySQL3.png" />
+      </a>
+    </li>
+  </ul>
+</div>

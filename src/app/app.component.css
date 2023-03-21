@@ -1,13 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,400,600|Roboto:300,400,700');
-
-/* Header, footer */
-
 header,
 footer {
   background-color: #212529;
 }
 
-/* Navbar */
+
 
 .navbar-brand {
   font-size: 18px;
@@ -29,4 +25,8 @@ nav li.active,
 nav li.active:before {
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
+}
+
+.navbar-toggler {
+  background-color: rgba(241, 3, 50, 0.4);
 }
