@@ -11,6 +11,7 @@ import { PostTwoComponent } from './post-two/post-two.component';
 import { PostThreeComponent } from './post-three/post-three.component';
 import { Page404Component } from './page404/page404.component';
 import { CarruselComponent } from './carrusel/carrusel.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CarruselComponent } from './carrusel/carrusel.component';
     PostTwoComponent,
     PostThreeComponent,
     Page404Component,
-    CarruselComponent
+    CarruselComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
