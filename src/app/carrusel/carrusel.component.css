@@ -1,8 +1,4 @@
 a {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
   vertical-align: baseline;
   background: transparent;
   text-decoration: none;
@@ -94,7 +90,6 @@ a {
   color: #84719f
 }
 
-
 @media screen and (max-width: 615px) {
   #master-container-scroller {
     height: 48px;
@@ -154,11 +149,6 @@ a {
     transform: translateY(0px)
   }
 
-  11.11111111111111% {
-    -webkit-transform: translateY(-66px);
-    transform: translateY(-66px)
-  }
-
   14.814814814814815% {
     -webkit-transform: translateY(-66px);
     transform: translateY(-66px)
@@ -192,11 +182,6 @@ a {
   48.148148148148145% {
     -webkit-transform: translateY(-264px);
     transform: translateY(-264px)
-  }
-
-  55.55555555555556% {
-    -webkit-transform: translateY(-330px);
-    transform: translateY(-330px)
   }
 
   59.25925925925926% {
