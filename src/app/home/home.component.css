@@ -18,3 +18,16 @@ h4 {
 h4:hover {
   transform: scale(1.1);
 }
+
+
+/* Gentleman Programming Section */
+.gp {
+  color: rgb(187, 23, 219);
+}
+
+@media(max-width:991px) {
+
+  .img-fluid {
+    margin: 0 auto;
+  }
+}
