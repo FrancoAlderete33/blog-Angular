@@ -3,3 +3,18 @@
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+h4 {
+  transition: 0.2s ease-in;
+  font-weight: bold;
+}
+
+h4:hover {
+  transform: scale(1.1);
+}

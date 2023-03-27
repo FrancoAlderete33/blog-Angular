@@ -20,7 +20,7 @@ a {
 }
 
 #master-container {
-  background-color: #F5C59C;
+  background-image: linear-gradient(to bottom, #f5b781, #f5ba86, #f5bd8b, #f5bf90, #f5c295, #fbc4a5, #ffc8b4, #ffcdc3, #ffd7dc, #fbe4ef, #f8f1f9, #fcfcfc);
   -webkit-animation: master-container-bg 15s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
   animation: master-container-bg 15s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
   display: -webkit-flex;
@@ -32,7 +32,7 @@ a {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 90vmin;
+  height: 100vh;
   min-height: 0;
   max-height: 100%;
 }

@@ -1,14 +1,29 @@
 header,
 footer {
-  background-color: #212529;
+  background-color: rgba(3, 3, 3, 0.88);
 }
 
+a {
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
 
+a:hover {
+  transform: scale(1.05);
+  color: white;
+}
+
+.navbar {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
 
 .navbar-brand {
   font-size: 18px;
   font-weight: 600;
+  color: rgb(33, 214, 112);
 }
+
+
 
 .nav-link,
 .dropdown-item {
@@ -28,5 +43,28 @@ nav li.active:before {
 }
 
 .navbar-toggler {
-  background-color: rgba(241, 3, 50, 0.4);
+  background-color: rgb(33, 214, 112);
+  ;
+}
+
+
+/* Footer */
+.icon {
+  transition: 0.3s ease-in;
+}
+
+.icon:hover {
+  transform: scale(1.5);
+  color: white;
+}
+
+.email {
+  cursor: pointer;
+}
+
+@media(max-width:991px) {
+  .logo {
+    width: 230px;
+    height: 60px;
+  }
 }
