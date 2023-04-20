@@ -17,57 +17,292 @@
         <p>Publicado el día 20 de marzo, 2023 a las 12:00 PM</p>
 
         <!-- Preview Image -->
-        <img src="../../assets/MySQL3.png" width="700px" height="250" class="img-fluid rounded" alt="Imagen de MySQL">
+        <img src="../../assets/MySQL3.png" width="600px" height="250" class="img-fluid rounded" alt="Imagen de MySQL">
         <!-- Post Content -->
-        <p class="lead mt-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer facilisis sollicitudin nisl non dignissim.
-          Phasellus hendrerit nisl et massa cursus suscipit. Donec pulvinar diam dolor, sit amet vestibulum purus
-          faucibus posuere. Proin a nunc et felis
-          aliquam sodales. Suspendisse dapibus ex a nulla faucibus, id venenatis risus facilisis. Nullam non aliquet
-          odio. Phasellus et neque feugiat nunc auctor pretium eu quis magna. Praesent mattis metus vitae ornare
-          hendrerit. Maecenas hendrerit
-          nibh id commodo rhoncus.
-        </p>
-        <p>
-          Vestibulum vehicula quam id quam lobortis convallis. Nullam quis pulvinar dolor. Pellentesque semper bibendum
-          facilisis. Ut vitae interdum tortor. Etiam mattis dui ut dui pharetra, ac auctor ligula rhoncus. Lorem ipsum
-          dolor sit amet, consectetur adipiscing
-          elit. Integer lacus leo, scelerisque id commodo sed, feugiat at mi. Donec quis ex justo.
-        </p>
+        <div class="mt-3">
+          <h2>Indice</h2>
+          <ul>
+            <li><a routerLink="/post-1" fragment="seccion-1">¿Qué es SQL y para qué se utiliza?</a></li>
+            <li><a routerLink="/post-1" fragment="seccion-2" >¿Qué son las bases de datos?</a></li>
+            <li><a routerLink="/post-1" fragment="seccion-3" >Estructura de una base de datos</a></li>
+            <li><a routerLink="/post-1" fragment="seccion-4" >Tipos de datos en SQL</a></li>
+            <li><a routerLink="/post-1" fragment="seccion-5" >Consultas básicas en SQL</a></li>
+            <li><a routerLink="/post-1" fragment="seccion-6" >Funciones y operadores en SQL</a></li>
+            <li><a routerLink="/post-1" fragment="seccion-7" >Ordenamiento y agrupamiento de datos en SQL</a></li>
+            <li><a routerLink="/post-1" fragment="seccion-8">Modificación de datos en SQL</a></li>
+            <li><a routerLink="/post-1" fragment="seccion-9">Unión de tablas en SQL</a></li>
+            
+          </ul>
+        </div>
 
-        <img src="../../assets/basesDatos (1).jpg" class="img-fluid rounded" alt="Imagen de Base de Datos">
-        <p>
-          In dictum ex orci, vitae ultricies ipsum sagittis et. Nam in risus non mauris dictum consequat ac vitae nisl.
-          Vestibulum sed mauris gravida, rhoncus augue eget, finibus libero. Vivamus vel quam congue, vehicula elit eu,
-          congue nulla. Cras at dui sit amet
-          nibh pharetra aliquam. Morbi rhoncus metus metus, eget tincidunt libero mollis at. Donec ut sodales diam, quis
-          finibus libero. Vivamus posuere pharetra nibh, nec tempor nulla. Integer vel mauris rhoncus, iaculis augue
-          quis, scelerisque tellus.
-        </p>
+        <div>
+          <h3 class="text-primary" id="seccion-1">¿Qué es SQL y para qué se utiliza?</h3>
+          <p class="fs-5 mt-4">
+            SQL se utiliza para realizar diversas tareas relacionadas con el manejo de datos, como la creación, modificación y eliminación de tablas, la inserción, actualización y eliminación de registros, la consulta y extracción de datos de la base de datos, la gestión de permisos y seguridad, entre otras.
 
-        <blockquote class="blockquote">
-          <p class="mb-0">
-            Nam nec lectus in nulla interdum ultrices mollis id dui. Duis sed sapien eu felis elementum scelerisque at
-            ac nibh. Pellentesque vehicula sed turpis eget pellentesque. Phasellus ut sapien hendrerit, egestas diam ac,
-            placerat felis. Vivamus pharetra odio
-            quis placerat pulvinar.
+            La mayoría de los sistemas de gestión de bases de datos relacionales, como MySQL, Oracle, PostgreSQL, SQL Server, entre otros, utilizan SQL como lenguaje estándar para interactuar con sus bases de datos.
           </p>
-          <strong class="blockquote-footer">Lorem ipsum dolor sit amet.</strong>
-        </blockquote>
+          <p class="fs-5">
+            En resumen, SQL es un lenguaje de programación fundamental para el manejo de datos en sistemas de bases de datos relacionales y su conocimiento es esencial para cualquier profesional que trabaje con datos en la actualidad.
+          </p>
+        </div>
 
-        <img src="../../assets/bbdd.jpg" width="700px" height="250" class="img-fluid rounded"
-          alt="Pizarra con esquema de BBDD">
-        <p class="mt-2">
-          In hac habitasse platea dictumst. Curabitur vulputate, nunc sed tempus vehicula, turpis urna mattis augue, sed
-          lobortis urna magna id libero. Nam eget erat mattis, molestie lorem id, pharetra nisl. Suspendisse facilisis
-          odio volutpat, porta dui in, sollicitudin
-          augue. Integer id nisl ac neque pretium sollicitudin. In nibh lorem, faucibus ut mattis et, lacinia in ante.
-          Nunc turpis elit, pellentesque at vestibulum a, dignissim non felis. Nullam vitae facilisis ex. Aenean ut
-          volutpat quam. Proin ut
-          varius metus. Pellentesque ut arcu nibh. Donec pretium, orci sit amet semper feugiat, quam massa sagittis
-          felis, vel tempus neque nulla viverra magna. Pellentesque non blandit arcu, et blandit lacus. Quisque
-          fringilla odio sapien, a molestie
-          quam molestie nec. Suspendisse posuere mattis eros.
-        </p>
+        <div>
+          <h3 class="text-primary">¿Qué son las bases de datos?</h3>
+          <img src="../../assets/basesDatos (1).jpg" class="img-fluid rounded" alt="Imagen de Base de Datos">
+          <p class="fs-5">
+            Las bases de datos se utilizan para almacenar información de forma estructurada, lo que permite realizar búsquedas, consultas, modificaciones y eliminaciones de manera eficiente y rápida. Además, las bases de datos pueden almacenar grandes cantidades de datos de manera segura y controlada.
+            
+            Existen diferentes tipos de bases de datos, pero las más comunes son las bases de datos relacionales y las bases de datos NoSQL.
+          </p>
+            <div >
+              <h3 class="text-primary mb-2">Existen diferentes tipos de bases de datos</h3>
+              <h5 class="fs-5">Las más comunes son las bases de datos relacionales y las bases de datos NoSQL.</h5>
+              <ul class="mt-4">
+                <li>Las bases de datos relacionales utilizan tablas para almacenar la información de forma estructurada, lo que permite establecer relaciones entre las diferentes tablas y realizar consultas complejas utilizando lenguajes de programación como SQL.</li>
+                <li>Las bases de datos NoSQL, por otro lado, no utilizan tablas y se basan en modelos de datos diferentes a los utilizados en las bases de datos relacionales. Estos modelos pueden incluir documentos, gráficos o clave-valor, entre otros.</li>
+              </ul>
+            </div>
+  
+          <div class="mb-3" >
+            <p class="mb-0">             
+              En resumen, una base de datos es un sistema organizado de almacenamiento de datos que se utiliza para almacenar, recuperar y gestionar información de forma eficiente y segura. Las bases de datos son fundamentales para el funcionamiento de muchas aplicaciones y sistemas informáticos en la actualidad.
+            </p>
+          </div>
+        </div>
+
+        <article>
+          <h3 class="text-primary">Estructuras de las BBDD</h3>
+
+          <img src="../../assets/bbdd.jpg" width="700px" class="img-fluid"
+            alt="Pizarra con esquema de BBDD">
+
+              <div class="mt-3 fs-5">
+                <p>
+                  Las bases de datos relacionales se estructuran en tablas, que se componen de filas y columnas. Cada tabla representa una entidad o concepto en la base de datos y contiene información relacionada con ese concepto.
+                </p>
+                
+                <p>
+                  Cada columna de la tabla representa un atributo o característica de la entidad y contiene datos de un tipo específico, como texto, números, fechas, entre otros. Cada fila de la tabla representa una instancia de la entidad y contiene valores para cada uno de los atributos de la entidad.
+                </p>
+
+                <p>
+
+                  Por ejemplo, si tuviéramos una tabla "Clientes" en una base de datos de una empresa, podríamos tener las siguientes columnas: "ID del cliente", "Nombre", "Apellido", "Dirección", "Correo electrónico", "Teléfono", entre otras. Cada fila de la tabla representaría un cliente en particular y tendría valores para cada una de las columnas correspondientes.
+                </p>
+
+                <p>
+                  Las bases de datos NoSQL pueden tener estructuras diferentes, dependiendo del modelo de datos utilizado. Por ejemplo, en una base de datos de documentos, los datos se almacenan en documentos que pueden tener una estructura flexible y anidada, similar a los objetos en la programación orientada a objetos.
+                </p>
+
+              </div>
+        </article>
+
+        <article>
+          <h3 class="text-primary">Tipos de datos en SQL</h3>
+          <h5 class="mt-4">En SQL hay diferentes tipos de datos que se utilizan para definir los atributos de las tablas y los valores que pueden almacenar. A continuación, te explico los tipos de datos más comunes en SQL:</h5>
+          <ul class="mt-4">
+            <li class="mt-4">Datos numéricos: se utilizan para almacenar valores numéricos y pueden ser enteros o con decimales. Los tipos de datos numéricos más comunes son INTEGER, BIGINT, SMALLINT, NUMERIC, DECIMAL y FLOAT.</li>
+            <li class="mt-4">Datos de caracteres: se utilizan para almacenar valores de texto y pueden ser de longitud fija o variable. Los tipos de datos de caracteres más comunes son CHAR, VARCHAR y TEXT.</li>
+            <li class="mt-4">Datos de fecha y hora: se utilizan para almacenar fechas y/o horas y pueden ser de diferentes formatos. Los tipos de datos de fecha y hora más comunes son DATE, TIME, DATETIME y TIMESTAMP.</li>
+            <li class="mt-4">Datos booleanos: se utilizan para almacenar valores verdadero o falso (TRUE o FALSE) y se representan con el tipo de datos BOOLEAN.</li>
+            <li class="mt-4">Datos binarios: se utilizan para almacenar datos binarios, como imágenes o archivos, y se representan con el tipo de datos BLOB o BYTEA.</li>
+            <li class="mt-4">Datos de enumeración: se utilizan para limitar los valores que se pueden almacenar a un conjunto específico de opciones y se representan con el tipo de datos ENUM.</li>
+          </ul>
+
+          <p class="fs-5">
+            Estos son solo algunos de los tipos de datos más comunes en SQL. Dependiendo del sistema de gestión de bases de datos y del lenguaje de programación utilizado, pueden haber más tipos de datos disponibles. Es importante tener en cuenta el tipo de dato adecuado para cada atributo de la tabla para asegurar la integridad de los datos y evitar errores de inserción o consulta.
+          </p>
+
+        </article>
+
+        <article>
+          <h3 class="text-primary">Consultas básicas en SQL</h3>
+
+          <p class="fs-5">Supongamos que tenemos una tabla llamada "Clientes" que tiene las siguientes columnas: "ID del cliente", "Nombre", "Apellido", "Edad", "Dirección" y "Correo electrónico"</p>
+
+          <h4 class="text-info">Ejemplo de SELECT:</h4>
+
+          <p class="fs-5">La cláusula SELECT se utiliza para especificar las columnas que queremos recuperar de la tabla. Por ejemplo, para recuperar el nombre y apellido de todos los clientes, podríamos escribir la siguiente consulta SQL:</p>
+
+          <pre class="fs-6">
+            <b>SELECT</b> Nombre , Apellido
+            <b>FROM</b> Clientes ;
+          </pre>
+
+          <p class="fs-5">Esta consulta devolvería una lista de todos los nombres y apellidos de los clientes en la tabla "Clientes".</p>
+
+          <h4 class="text-info">Ejemplo de FROM:</h4>
+
+          <p class="fs-5">La cláusula FROM se utiliza para especificar la tabla de la que queremos recuperar los datos. Por ejemplo, para recuperar la dirección de un cliente en particular, podríamos escribir la siguiente consulta SQL:</p>
+
+          <pre class="fs-6">
+            <b>SELECT</b> Dirección
+            <b>FROM</b> Clientes
+            <b>WHERE</b> ID del cliente = 12;
+          </pre>
+          
+          <p class="fs-5">Esta consulta devolvería la dirección del cliente con el ID 12.</p>
+
+          <h4 class="text-info">Ejemplo de WHERE:</h4>
+
+          <p class="fs-5"> La cláusula WHERE se utiliza para filtrar los datos de la tabla. Por ejemplo, para recuperar todos los clientes que tengan menos de 30 años, podríamos escribir la siguiente consulta SQL:</p>
+
+          <pre class="fs-6">
+          <b>SELECT</b> Nombre, Apellido, Edad
+          <b>FROM</b> Clientes
+          <b>WHERE</b> Edad < 30 ;
+          </pre>
+
+          <p class="fs-5">Esta consulta devolvería una lista de todos los clientes que tienen menos de 30 años, junto con sus nombres y edades.</p>
+
+          <h4 class="text-info">Funciones de agregación:</h4>
+
+          <p class="fs-5">Las funciones de agregación se utilizan para realizar cálculos sobre los datos de una tabla. Algunas de las funciones de agregación más comunes en SQL son: SUM, AVG, COUNT, MAX y MIN. Por ejemplo, si queremos calcular la suma total de los precios de todos los productos en una tabla "Productos", podríamos utilizar la función SUM de la siguiente manera:</p>
+
+          <pre class="fs-6">
+            <b>SELECT</b> SUM(Precio)
+            <b>FROM</b> Productos;
+          </pre>
+
+          <h4 class="text-info">Operadores lógicos:</h4>
+
+          <p class="fs-5">Los operadores lógicos se utilizan para combinar condiciones en una consulta SQL. Los operadores más comunes son: AND, OR y NOT. Por ejemplo, si queremos recuperar los clientes que tienen más de 25 años y viven en Buenos Aires, podríamos utilizar el operador AND de la siguiente manera:</p>
+
+          <pre class="fs-6">
+            <b>SELECT</b> *
+            <b>FROM</b> Clientes
+            <b>WHERE</b> Edad > 25 AND Cuidad = 'Buenos Aires' ;
+          </pre>
+
+          <h4 class="text-info">Operadores aritméticos:</h4>
+
+          <p class="fs-5">Los operadores aritméticos se utilizan para realizar operaciones matemáticas en una consulta SQL. Los operadores más comunes son: + (suma), - (resta), * (multiplicación) y / (división). Por ejemplo, si queremos calcular el precio total de un pedido que contiene 5 productos de un precio unitario de 10 dólares, podríamos utilizar el operador * de la siguiente manera:</p>
+
+          <pre class="fs-6">
+            <b>SELECT</b> 5 * 10 AS 'Precio Total';
+          </pre>
+
+          <p class="fs-5">En este ejemplo, la consulta SQL devolvería el valor 50 como resultado del cálculo realizado mediante el operador *.
+          </p>
+
+          <h3 class="text-primary">Ordenamiento y agrupamiento de datos en SQL</h3>
+
+          <h4 class="mt-4 text-info">ORDER BY:</h4>
+
+          <p class="fs-5">La cláusula ORDER BY se utiliza para ordenar los resultados de una consulta SQL por una o varias columnas. Por ejemplo, si queremos mostrar los nombres de todos los clientes en orden alfabético, podríamos escribir la siguiente consulta SQL:</p>
+
+          <pre class="fs-6">
+            <b>SELECT</b> Nombre
+            <b>FROM</b> Clientes
+            <b>ORDER BY</b> Nombre ASC ;
+          </pre>
+
+          <p class="fs-5">En este ejemplo, la consulta SQL ordenará los nombres de los clientes en orden ascendente (de la A a la Z) y devolverá los resultados en ese orden.</p>
+
+          <h4 class="text-info">GROUP BY:</h4>
+
+          <p class="fs-5">La cláusula GROUP BY se utiliza para agrupar los resultados de una consulta SQL por una o varias columnas. Por ejemplo, si queremos contar cuántos clientes hay en cada ciudad, podríamos escribir la siguiente consulta SQL:</p>
+
+          <pre class="fs-6">
+            <b>SELECT</b> Ciudad, COUNT(*) AS 'Numero de clientes'
+            <b>FROM</b> Clientes
+            <b>GROUP BY</b> Cuidad ;
+          </pre>
+
+          <p class="fs-5">En este ejemplo, la consulta SQL agrupará los clientes por ciudad y contará el número de clientes en cada ciudad. Los resultados se mostrarán en una tabla que tendrá dos columnas: "Ciudad" y "Número de clientes".</p>
+
+          <h3 class="text-primary">Modificación de datos en SQL</h3>
+
+          <h4 class="text-info">INSERT</h4>
+
+          <p class="fs-5">La cláusula INSERT se utiliza para insertar nuevos registros en una tabla. Por ejemplo, si queremos agregar un nuevo producto a una tabla "Productos", podríamos utilizar la siguiente consulta SQL:</p>
+
+          <pre class="fs-6">
+           <b>INSERT</b> INTO Productos (Nombre, Precio, Stock)
+           <b>VALUES</b> ('Nuevo Producto', 50.00, 100);
+          </pre>
+
+          <p class="fs-5">En este ejemplo, la consulta SQL insertará un nuevo registro en la tabla "Productos" con los valores 'Nuevo Producto', 50.00 y 100 en las columnas "Nombre", "Precio" y "Stock", respectivamente.</p>
+
+          <h4 class="text-info">UPDATE</h4>
+
+          <p class="fs-5">La cláusula UPDATE se utiliza para actualizar los registros existentes en una tabla. Por ejemplo, si queremos actualizar el precio de un producto en la tabla "Productos", podríamos utilizar la siguiente consulta SQL:</p>
+
+          <pre class="fs-6">
+           <b>UPDATE</b> Productos
+           <b>SET</b> Precio = 60.00
+           <b>WHERE</b> Nombre = 'Nuevo Producto';
+          </pre>
+
+          <p class="fs-5">En este ejemplo, la consulta SQL actualizará el precio del producto con nombre 'Nuevo Producto' a 60.00 en la tabla "Productos".</p>
+
+          <h4 class="text-info">DELETE</h4>
+
+          <p class="fs-5">La cláusula DELETE se utiliza para eliminar registros de una tabla. Por ejemplo, si queremos eliminar un producto de la tabla "Productos", podríamos utilizar la siguiente consulta SQL:</p>
+
+          <pre class="fs-6">
+           <b>DELETE</b> FROM Productos
+           <b>WHERE</b> Nombre = 'Nuevo Producto';
+          </pre>
+
+          <p class="fs-5">En este ejemplo, la consulta SQL eliminará el registro del producto con nombre 'Nuevo Producto' de la tabla "Productos".</p>
+
+        </article>
+
+        <div id="#seccion-9">
+
+          <h3 class="text-primary" >Unión de tablas en SQL</h3>
+  
+  
+          <p class="fs-5">Supongamos que tenemos dos tablas: "Clientes" y "Pedidos". La tabla "Clientes" contiene información sobre los clientes, mientras que la tabla "Pedidos" contiene información sobre los pedidos realizados por los clientes. Ambas tablas comparten una columna "IDCliente" que se utiliza para relacionar los registros de ambas tablas.</p>
+  
+          <h4 class="text-info">INNER JOIN:</h4>
+  
+          <p class="fs-5">La cláusula INNER JOIN se utiliza para mostrar solo los registros que tienen una coincidencia en ambas tablas. Por ejemplo, si queremos mostrar los nombres de los clientes y la información del pedido correspondiente solo para aquellos clientes que han realizado pedidos, podríamos utilizar la siguiente consulta SQL:</p>
+  
+          <pre class="fs-6"> 
+           <b>SELECT</b> Clientes.Nombre, Pedidos.Fecha, Pedidos.Total
+           <b>FROM</b> Clientes
+           <b>INNER JOIN</b> Pedidos
+           <b>ON</b> Clientes.IDCliente = Pedidos.IDCliente;
+          </pre>
+  
+          <p class="fs-5">En este ejemplo, la consulta SQL unirá las tablas "Clientes" y "Pedidos" utilizando la columna "IDCliente". Solo se mostrarán los registros para los cuales existe una coincidencia en ambas tablas.</p>
+  
+          <h4 class="text-info">LEFT JOIN:</h4>
+  
+          <p class="fs-5">La cláusula LEFT JOIN se utiliza para mostrar todos los registros de la tabla izquierda (primera tabla especificada en la consulta SQL) y los registros coincidentes de la tabla derecha (segunda tabla especificada en la consulta SQL). Por ejemplo, si queremos mostrar los nombres de todos los clientes y la información del pedido correspondiente, incluso si el cliente no ha realizado ningún pedido, podríamos utilizar la siguiente consulta SQL:</p>
+  
+          <pre class="fs-6">
+           <b>SELECT</b> Clientes.Nombre, Pedidos.Fecha, Pedidos.Total
+           <b>FROM</b> Clientes
+           <b>LEFT</b> JOIN Pedidos
+           <b>ON</b> Clientes.IDCliente = Pedidos.IDCliente;
+          </pre>
+  
+          <p class="fs-5">En este ejemplo, la consulta SQL unirá las tablas "Clientes" y "Pedidos" utilizando la columna "IDCliente". Se mostrarán todos los registros de la tabla "Clientes" y los registros coincidentes de la tabla "Pedidos". Si un cliente no ha realizado ningún pedido, la información del pedido será nula.</p>
+  
+          <h4 class="text-info">RIGHT JOIN:</h4>
+  
+          <p class="fs-5">La cláusula RIGHT JOIN se utiliza para mostrar todos los registros de la tabla derecha (segunda tabla especificada en la consulta SQL) y los registros coincidentes de la tabla izquierda (primera tabla especificada en la consulta SQL). Por ejemplo, si queremos mostrar la información de todos los pedidos y el nombre del cliente correspondiente, incluso si el cliente no existe en la tabla "Clientes", podríamos utilizar la siguiente consulta SQL:</p>
+  
+          <pre class="fs-5">
+           <b>SELECT</b> Clientes.Nombre, Pedidos.Fecha, Pedidos.Total
+           <b>FROM</b> Clientes
+           <b>RIGHT</b> JOIN Pedidos
+           <b>ON</b> Clientes.IDCliente = Pedidos.IDCliente;
+          </pre>
+  
+          <p class="fs-5">En este ejemplo, la consulta SQL unirá las tablas <i>"Clientes" </i>  y  <i>"Pedidos" </i>utilizando la columna <i>"IDCliente"</i> . Se mostrarán todos los registros de la tabla <i>"Pedidos"</i>  y los registros coincidentes de la tabla <i>"Clientes"</i> . Si un pedido no tiene un cliente correspondiente en la tabla <i>"Clientes"</i> , el nombre del cliente será nulo.</p>
+  
+          <h3 class="text-primary">Importancia de aprender SQL en la actualidad</h3>
+  
+          <p class="fs-5">SQL es un lenguaje de programación que se utiliza para administrar y manipular datos en las bases de datos relacionales. Hoy en día, la mayoría de las empresas y organizaciones manejan grandes cantidades de datos y utilizan bases de datos relacionales para almacenar y acceder a esa información.</p>
+  
+          <p class="fs-5">Aprender SQL es importante porque permite a los profesionales trabajar con datos de manera más eficiente y efectiva. Con SQL, se pueden realizar consultas y búsquedas complejas en grandes conjuntos de datos, lo que facilita la identificación de patrones y tendencias. También permite la creación y administración de bases de datos, lo que es fundamental para el funcionamiento de muchas aplicaciones y sistemas empresariales.</p>
+  
+          <p class="fs-5">Además, el conocimiento de SQL es una habilidad altamente valorada en el mercado laboral actual, especialmente en roles relacionados con análisis de datos, desarrollo de software y administración de bases de datos. Saber SQL puede abrir oportunidades laborales en una amplia variedad de industrias y puede ser una habilidad altamente transferible a medida que los profesionales avanzan en sus carreras.</p>
+        </div>
 
       </div>

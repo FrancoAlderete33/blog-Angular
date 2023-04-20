@@ -1,0 +1,16 @@
+li {
+    list-style-type: style;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    margin-bottom: 0.2rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover ,li:hover {
+    transform: scale(0.99);
+    color: orange;
+}
+
