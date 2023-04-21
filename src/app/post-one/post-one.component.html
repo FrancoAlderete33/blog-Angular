@@ -20,7 +20,7 @@
         <img src="../../assets/MySQL3.png" width="600px" height="250" class="img-fluid rounded" alt="Imagen de MySQL">
         <!-- Post Content -->
         <div class="mt-3">
-          <h2>Indice</h2>
+          <h2 class="text-primary">Indice</h2>
           <ul>
             <li><a routerLink="/post-1" fragment="seccion-1">¿Qué es SQL y para qué se utiliza?</a></li>
             <li><a routerLink="/post-1" fragment="seccion-2" >¿Qué son las bases de datos?</a></li>
@@ -57,15 +57,15 @@
           </p>
             <div >
               <h3 class="text-primary mb-2">Existen diferentes tipos de bases de datos</h3>
-              <h5 class="fs-5">Las más comunes son las bases de datos relacionales y las bases de datos NoSQL.</h5>
-              <ul class="mt-4">
+              <p class="fs-5">Las más comunes son las bases de datos relacionales y las bases de datos NoSQL.</p>
+              <ul class="mt-3">
                 <li>Las bases de datos relacionales utilizan tablas para almacenar la información de forma estructurada, lo que permite establecer relaciones entre las diferentes tablas y realizar consultas complejas utilizando lenguajes de programación como SQL.</li>
                 <li>Las bases de datos NoSQL, por otro lado, no utilizan tablas y se basan en modelos de datos diferentes a los utilizados en las bases de datos relacionales. Estos modelos pueden incluir documentos, gráficos o clave-valor, entre otros.</li>
               </ul>
             </div>
   
           <div class="mb-3" >
-            <p class="mb-0">             
+            <p class="mb-0 fs-5">             
               En resumen, una base de datos es un sistema organizado de almacenamiento de datos que se utiliza para almacenar, recuperar y gestionar información de forma eficiente y segura. Las bases de datos son fundamentales para el funcionamiento de muchas aplicaciones y sistemas informáticos en la actualidad.
             </p>
           </div>
@@ -88,7 +88,7 @@
 
                 <p>
 
-                  Por ejemplo, si tuviéramos una tabla "Clientes" en una base de datos de una empresa, podríamos tener las siguientes columnas: "ID del cliente", "Nombre", "Apellido", "Dirección", "Correo electrónico", "Teléfono", entre otras. Cada fila de la tabla representaría un cliente en particular y tendría valores para cada una de las columnas correspondientes.
+                  Por ejemplo, si tuviéramos una tabla <i>"Clientes"</i>  en una base de datos de una empresa, podríamos tener las siguientes columnas: <i>"ID del cliente"</i> , <i>"Nombre"</i> , <i>"Apellido"</i> , <i>"Dirección"</i> , <i>"Correo electrónico"</i> , <i>"Teléfono"</i> , entre otras. Cada fila de la tabla representaría un cliente en particular y tendría valores para cada una de las columnas correspondientes.
                 </p>
 
                 <p>
@@ -119,7 +119,7 @@
         <article>
           <h3 class="text-primary">Consultas básicas en SQL</h3>
 
-          <p class="fs-5">Supongamos que tenemos una tabla llamada "Clientes" que tiene las siguientes columnas: "ID del cliente", "Nombre", "Apellido", "Edad", "Dirección" y "Correo electrónico"</p>
+          <p class="fs-5">Supongamos que tenemos una tabla llamada <i>"Clientes"</i>  que tiene las siguientes columnas: <i>"ID del cliente"</i> , <i>"Nombre"</i> , <i>"Apellido"</i> , <i>"Edad"</i> , <i>"Dirección"</i>  y <i>"Correo electrónico"</i> </p>
 
           <h4 class="text-info">Ejemplo de SELECT:</h4>
 
@@ -223,11 +223,11 @@
            <b>VALUES</b> ('Nuevo Producto', 50.00, 100);
           </pre>
 
-          <p class="fs-5">En este ejemplo, la consulta SQL insertará un nuevo registro en la tabla "Productos" con los valores 'Nuevo Producto', 50.00 y 100 en las columnas "Nombre", "Precio" y "Stock", respectivamente.</p>
+          <p class="fs-5">En este ejemplo, la consulta SQL insertará un nuevo registro en la tabla "Productos" con los valores 'Nuevo Producto', 50.00 y 100 en las columnas <i>"Nombre"</i> , <i>"Precio"</i>  y <i>"Stock"</i> , respectivamente.</p>
 
           <h4 class="text-info">UPDATE</h4>
 
-          <p class="fs-5">La cláusula UPDATE se utiliza para actualizar los registros existentes en una tabla. Por ejemplo, si queremos actualizar el precio de un producto en la tabla "Productos", podríamos utilizar la siguiente consulta SQL:</p>
+          <p class="fs-5">La cláusula UPDATE se utiliza para actualizar los registros existentes en una tabla. Por ejemplo, si queremos actualizar el precio de un producto en la tabla <i>"Productos"</i> , podríamos utilizar la siguiente consulta SQL:</p>
 
           <pre class="fs-6">
            <b>UPDATE</b> Productos
@@ -235,18 +235,18 @@
            <b>WHERE</b> Nombre = 'Nuevo Producto';
           </pre>
 
-          <p class="fs-5">En este ejemplo, la consulta SQL actualizará el precio del producto con nombre 'Nuevo Producto' a 60.00 en la tabla "Productos".</p>
+          <p class="fs-5">En este ejemplo, la consulta SQL actualizará el precio del producto con nombre 'Nuevo Producto' a 60.00 en la tabla <i>"Productos"</i> .</p>
 
           <h4 class="text-info">DELETE</h4>
 
-          <p class="fs-5">La cláusula DELETE se utiliza para eliminar registros de una tabla. Por ejemplo, si queremos eliminar un producto de la tabla "Productos", podríamos utilizar la siguiente consulta SQL:</p>
+          <p class="fs-5">La cláusula DELETE se utiliza para eliminar registros de una tabla. Por ejemplo, si queremos eliminar un producto de la tabla <i>"Productos"</i> , podríamos utilizar la siguiente consulta SQL:</p>
 
           <pre class="fs-6">
            <b>DELETE</b> FROM Productos
            <b>WHERE</b> Nombre = 'Nuevo Producto';
           </pre>
 
-          <p class="fs-5">En este ejemplo, la consulta SQL eliminará el registro del producto con nombre 'Nuevo Producto' de la tabla "Productos".</p>
+          <p class="fs-5">En este ejemplo, la consulta SQL eliminará el registro del producto con nombre 'Nuevo Producto' de la tabla <i>"Productos"</i> .</p>
 
         </article>
 
@@ -255,7 +255,7 @@
           <h3 class="text-primary" >Unión de tablas en SQL</h3>
   
   
-          <p class="fs-5">Supongamos que tenemos dos tablas: "Clientes" y "Pedidos". La tabla "Clientes" contiene información sobre los clientes, mientras que la tabla "Pedidos" contiene información sobre los pedidos realizados por los clientes. Ambas tablas comparten una columna "IDCliente" que se utiliza para relacionar los registros de ambas tablas.</p>
+          <p class="fs-5">Supongamos que tenemos dos tablas: <i>"Clientes"</i>  y <i>"Pedidos"</i> . La tabla <i>"Clientes"</i>  contiene información sobre los clientes, mientras que la tabla <i>"Pedidos"</i> contiene información sobre los pedidos realizados por los clientes. Ambas tablas comparten una columna <i>"IDCliente"</i>  que se utiliza para relacionar los registros de ambas tablas.</p>
   
           <h4 class="text-info">INNER JOIN:</h4>
   
@@ -268,7 +268,7 @@
            <b>ON</b> Clientes.IDCliente = Pedidos.IDCliente;
           </pre>
   
-          <p class="fs-5">En este ejemplo, la consulta SQL unirá las tablas "Clientes" y "Pedidos" utilizando la columna "IDCliente". Solo se mostrarán los registros para los cuales existe una coincidencia en ambas tablas.</p>
+          <p class="fs-5">En este ejemplo, la consulta SQL unirá las tablas <i>"Clientes"</i>  y <i>"Pedidos"</i>  utilizando la columna <i>"IDCliente"</i> . Solo se mostrarán los registros para los cuales existe una coincidencia en ambas tablas.</p>
   
           <h4 class="text-info">LEFT JOIN:</h4>
   
@@ -281,13 +281,13 @@
            <b>ON</b> Clientes.IDCliente = Pedidos.IDCliente;
           </pre>
   
-          <p class="fs-5">En este ejemplo, la consulta SQL unirá las tablas "Clientes" y "Pedidos" utilizando la columna "IDCliente". Se mostrarán todos los registros de la tabla "Clientes" y los registros coincidentes de la tabla "Pedidos". Si un cliente no ha realizado ningún pedido, la información del pedido será nula.</p>
+          <p class="fs-5">En este ejemplo, la consulta SQL unirá las tablas <i>"Clientes"</i>  y <i>"Pedidos"</i>  utilizando la columna <i>"IDCliente"</i> . Se mostrarán todos los registros de la tabla <i>"Clientes"</i>  y los registros coincidentes de la tabla <i>"Pedidos"</i> . Si un cliente no ha realizado ningún pedido, la información del pedido será nula.</p>
   
           <h4 class="text-info">RIGHT JOIN:</h4>
   
-          <p class="fs-5">La cláusula RIGHT JOIN se utiliza para mostrar todos los registros de la tabla derecha (segunda tabla especificada en la consulta SQL) y los registros coincidentes de la tabla izquierda (primera tabla especificada en la consulta SQL). Por ejemplo, si queremos mostrar la información de todos los pedidos y el nombre del cliente correspondiente, incluso si el cliente no existe en la tabla "Clientes", podríamos utilizar la siguiente consulta SQL:</p>
+          <p class="fs-5">La cláusula RIGHT JOIN se utiliza para mostrar todos los registros de la tabla derecha (segunda tabla especificada en la consulta SQL) y los registros coincidentes de la tabla izquierda (primera tabla especificada en la consulta SQL). Por ejemplo, si queremos mostrar la información de todos los pedidos y el nombre del cliente correspondiente, incluso si el cliente no existe en la tabla  <i>"Clientes"</i> , podríamos utilizar la siguiente consulta SQL:</p>
   
-          <pre class="fs-5">
+          <pre class="fs-6">
            <b>SELECT</b> Clientes.Nombre, Pedidos.Fecha, Pedidos.Total
            <b>FROM</b> Clientes
            <b>RIGHT</b> JOIN Pedidos
