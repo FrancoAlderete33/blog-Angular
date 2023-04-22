@@ -1,0 +1,58 @@
+h3 {
+    font-size: 2rem;
+    color: rgb(5, 167, 5);
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h4{
+    font-size: 1.5rem;
+    color: rgb(5, 154, 199);
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+} 
+
+p{
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+ul {
+    margin-top: 1rem;
+}
+
+li{
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    transition:  0.4s ease-in;
+}
+
+li:hover {
+    transform: scale(1.02);
+    color: orange;
+}
+
+pre {
+    background-color: rgb(255, 241, 240);
+    max-width: 700px;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+b{
+    font-size: 0.95rem;
+    color:blueviolet;
+}
+
+img {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
