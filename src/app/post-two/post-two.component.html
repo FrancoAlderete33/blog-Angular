@@ -69,7 +69,7 @@
                               <b>select</b> persona;
           </pre>
 
-          <p>Aquí personas es la fuente de datos y persona.Edad > 18 especifica que solo queremos seleccionar los objetos persona que tengan un atributo Edad mayor a 18.</p>
+          <p>Aquí personas es la fuente de datos y <i>persona.Edad > 18 </i>especifica que solo queremos seleccionar los objetos persona que tengan un atributo Edad mayor a 18.</p>
 
           <h4>Ordenamiento de elementos con ORDERBY:</h4>
 
@@ -81,7 +81,7 @@
                                <b>select</b> persona;
           </pre>
 
-          <p>Aquí personas es la fuente de datos y orderby persona.Edad especifica que queremos ordenar los objetos persona en base al atributo Edad.</p>
+          <p>Aquí personas es la fuente de datos y orderby <i>persona.Edad</i>  especifica que queremos ordenar los objetos persona en base al atributo  Edad.</p>
 
           <h4>Agrupamiento de elementos con GROUPBY:</h4>
 
@@ -92,7 +92,7 @@
                                           <b>group</b> persona <b>by</b> persona.CiudadDeOrigen;
           </pre>
 
-          <P>Aquí personas es la fuente de datos y group persona by persona.CiudadDeOrigen especifica que queremos agrupar los objetos persona en base al atributo CiudadDeOrigen.</P>
+          <P>Aquí personas es la fuente de datos y group persona by <i>persona.CiudadDeOrigen</i>  especifica que queremos agrupar los objetos persona en base al atributo CiudadDeOrigen.</P>
 
         </div>
 
@@ -111,7 +111,7 @@
                                      <b>select new</b>  [ NombreProducto = producto.Nombre, NombreCategoria = categoria.Nombre ];   
                </pre>
 
-               <p>Aquí productos y categorias son dos fuentes de datos diferentes, y on producto.IdCategoria equals categoria.IdCategoria especifica que queremos combinar los objetos en base al atributo IdCategoria.</p>
+               <p>Aquí productos y categorias son dos fuentes de datos diferentes, y on <i>producto.IdCategoria</i> equals <i>categoria.IdCategoria</i> especifica que queremos combinar los objetos en base al atributo IdCategoria.</p>
 
                <h4>Uso de funciones de agregado con GROUPBY:</h4>
 
@@ -123,7 +123,7 @@
                                  <b>select new</b> [ Ciudad = grupoCiudad.Key, Cantidad = grupoCiudad.Count() ];
                </pre>
 
-               <p>Aquí group persona by persona.CiudadDeOrigen especifica que queremos agrupar los objetos persona en base al atributo CiudadDeOrigen, y into grupoCiudad crea un nuevo grupo con el nombre grupoCiudad. Luego, grupoCiudad.Key se utiliza para obtener el valor del atributo CiudadDeOrigen del grupo actual, y grupoCiudad.Count() se utiliza para obtener la cantidad de objetos en el grupo.</p>
+               <p>Aquí group persona by <i>persona.CiudadDeOrigen</i> especifica que queremos agrupar los objetos persona en base al atributo CiudadDeOrigen, y into grupoCiudad crea un nuevo grupo con el nombre grupoCiudad. Luego, <i>grupoCiudad.Key</i> se utiliza para obtener el valor del atributo CiudadDeOrigen del grupo actual, y <i>grupoCiudad.Count()</i> se utiliza para obtener la cantidad de objetos en el grupo.</p>
 
                <h4>Uso de subconsultas con WHERE</h4>
                
@@ -137,7 +137,7 @@
                                              <b>select</b> persona;
                </pre>
 
-               <p>Aquí la subconsulta from p in personas where p.CiudadDeOrigen == persona.CiudadDeOrigen select p.Edad se utiliza para obtener una lista de edades de personas que tengan la misma ciudad de origen que la persona actual. Luego, .Average() se utiliza para obtener el promedio de edad de esas personas. Finalmente, persona.Edad > se utiliza para filtrar solo las personas cuya edad sea mayor al promedio calculado.</p>
+               <p>Aquí la subconsulta from p in personas where <i>p.CiudadDeOrigen == persona.CiudadDeOrigen</i> select <i>p.Edad</i> se utiliza para obtener una lista de edades de personas que tengan la misma ciudad de origen que la persona actual. Luego, .Average() se utiliza para obtener el promedio de edad de esas personas. Finalmente,<i>persona.Edad ></i> se utiliza para filtrar solo las personas cuya edad sea mayor al promedio calculado.</p>
 
           </div>
 

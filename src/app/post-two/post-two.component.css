@@ -71,6 +71,11 @@ b{
     color:blueviolet;
 }
 
+i {
+    font-size: 1.2rem;
+    color:rgb(43, 73, 226);
+}
+
 img {
     margin-top: 1rem;
     margin-bottom: 1rem;
