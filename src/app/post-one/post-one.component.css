@@ -1,39 +1,57 @@
 h2, h3 {
-    font-size: 2.2rem;
+    color: orangered ;
+    font-size: 2rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 h4{
-    font-size: 1.6;
+    font-size: 1.6rem;
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
-}
-
-li {
-    list-style-type: style;
-    cursor: pointer;
-    transition: 0.3s ease-in;
-    margin-bottom: 0.2rem;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-}
-
-a:hover ,li:hover {
-    transform: scale(0.99);
+    font-weight: bold;
     color: orange;
 }
 
+p{
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-top: 0.5rem;
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
+    transition:  0.4s ease-in;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+li:hover {
+    transform: scale(1.02);
+}
+
+
 i{
-    color:rgb(5, 170, 5);
+    font-size: 1.05rem;
+    color:rgb(23, 176, 23);
     font-weight: bold;
     letter-spacing: 1px;
 }
 
+b{
+    font: 1.1rem;
+    font-weight: bold;
+    color: blueviolet;
+}
 
 
-@media(min-width:991px){
+
+
 
     pre {
         background-color: azure;
@@ -42,4 +60,3 @@ i{
         border-radius: 1rem;
         box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
     }
-}
