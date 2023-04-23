@@ -1,3 +1,9 @@
+/* Titulos */
+h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 h3 {
     font-size: 2rem;
     color: rgb(5, 167, 5);
@@ -15,21 +21,17 @@ h4{
     margin-top: 1rem;
     margin-bottom: 1rem;
 } 
+/* Titulos */
 
-p{
-    font-size: 1.15rem;
-    letter-spacing: 0.5px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
 
+/* Lista */
 ul {
     margin-top: 1rem;
 }
 
 li{
     margin-top: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.15rem;
     letter-spacing: 0.5px;
     transition:  0.4s ease-in;
 }
@@ -38,17 +40,34 @@ li:hover {
     transform: scale(1.02);
     color: orange;
 }
+/* Lista */
 
+
+
+/* Fragmentos de codigo  */
 pre {
+    font-size: 1.1rem;
     background-color: rgb(255, 241, 240);
     max-width: 700px;
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
+/* Fragmentos de codigo  */
+
+
+
+/* Parrafo - Negritas y Img  */
+p{
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 
 b{
-    font-size: 0.95rem;
+    font-size: 1.2rem;
     color:blueviolet;
 }
 
@@ -56,3 +75,5 @@ img {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+/* Parrafo - Negritas y Img  */
+

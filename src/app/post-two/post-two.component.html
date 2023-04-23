@@ -7,7 +7,7 @@
       <!-- POSTS -->
       <div class="col-md-9">
         <!-- Title -->
-        <h2 class="text-success">LINQ</h2>
+        <h1 class="text-success">LINQ</h1>
         <!-- Author -->
         <p class="lead">
           by
@@ -55,8 +55,8 @@
           <p>Selección de elementos con select: La cláusula select se utiliza para seleccionar elementos específicos de una fuente de datos. Por ejemplo, para seleccionar solo los nombres de una lista de objetos, podríamos escribir la consulta como:</p>
 
           <pre>
-           <b>var</b> nombres = <b>from</b> persona <b>in</b> personas
-                         <b>select</b>  persona.Nombre;
+<b>var</b> nombres = <b>from</b> persona <b>in</b> personas
+                <b>select</b>  persona.Nombre;
           </pre>
 
           <p>Aquí personas es la fuente de datos y persona.Nombre especifica que solo queremos seleccionar el atributo Nombre de cada objeto persona.</p>
@@ -66,9 +66,9 @@
           <p>La cláusula where se utiliza para filtrar elementos de una fuente de datos en base a una condición. Por ejemplo, para seleccionar solo las personas con una edad mayor a 18 años, podríamos escribir la consulta como:</p>
 
           <pre>
-           <b>var</b> personasMayoresDeEdad = <b>from</b> persona <b>in</b> personas
-                                      <b>where</b> persona.Edad > <span>18</span> 
-                                      <b>select</b> persona;
+    <b>var</b> personasMayoresDeEdad = <b>from</b> persona <b>in</b> personas
+                              <b>where</b> persona.Edad > <span>18</span> 
+                              <b>select</b> persona;
           </pre>
 
           <p>Aquí personas es la fuente de datos y persona.Edad > 18 especifica que solo queremos seleccionar los objetos persona que tengan un atributo Edad mayor a 18.</p>
@@ -78,9 +78,9 @@
           <p>La cláusula orderby se utiliza para ordenar elementos de una fuente de datos en base a un atributo específico. Por ejemplo, para ordenar una lista de personas por edad de forma ascendente, podríamos escribir la consulta como:</p>
 
           <pre>
-           <b>var</b> personasOrdenadasPorEdad = <b>from</b> persona <b>in</b> personas
-                                          <b>orderby</b> persona.Edad
-                                          <b>select</b> persona;
+<b>var</b> personasOrdenadasPorEdad = <b>from</b> persona <b>in</b> personas
+                               <b>orderby</b> persona.Edad
+                               <b>select</b> persona;
           </pre>
 
           <p>Aquí personas es la fuente de datos y orderby persona.Edad especifica que queremos ordenar los objetos persona en base al atributo Edad.</p>
@@ -90,8 +90,8 @@
           <p>La cláusula groupby se utiliza para agrupar elementos de una fuente de datos en base a un atributo específico. Por ejemplo, para agrupar una lista de personas por su ciudad de origen, podríamos escribir la consulta como:</p>
 
           <pre>
-           <b>var</b> personasAgrupadasPorCiudad = <b>from</b> persona <b>in</b> personas
-                                            <b>group</b> persona <b>by</b> persona.CiudadDeOrigen;
+          <b>var</b> personasAgrupadasPorCiudad = <b>from</b> persona <b>in</b> personas
+                                          <b>group</b> persona <b>by</b> persona.CiudadDeOrigen;
           </pre>
 
           <P>Aquí personas es la fuente de datos y group persona by persona.CiudadDeOrigen especifica que queremos agrupar los objetos persona en base al atributo CiudadDeOrigen.</P>
