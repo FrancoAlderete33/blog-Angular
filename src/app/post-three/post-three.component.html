@@ -7,7 +7,7 @@
       <!-- POSTS -->
       <div class="col-md-9">
         <!-- Title -->
-        <h2 class="text-danger">Git</h2>
+        <h2>Git</h2>
         <!-- Author -->
         <p class="lead">
           by
@@ -17,7 +17,7 @@
         <p>Publicado el dia 27 de Marzo, 2023 a las 16:15 PM</p>
 
         <!-- Preview Image -->
-        <img src="../../assets/GIT.png" class="img-fluid rounded" alt="">
+        <img src="../../assets/GIT.png" class="img-fluid rounded" width="300px" height="300px" alt="">
         <!-- Post Content -->
         <div>
           <h3>¿Qué es Git?</h3>
@@ -36,15 +36,18 @@
         <h4>Windows:</h4>
 
         <ul>
-          <li>Descarga el instalador de Git desde la página web oficial: https://git-scm.com/download/win</li>
+          <li>Descarga el instalador de Git desde la página web oficial: <a href="https://git-scm.com/download/win" target="_blank">https://git-scm.com/download/win</a> </li>
+
           <li>Ejecuta el archivo descargado y sigue las instrucciones del asistente de instalación.</li>
-          <li>Asegúrate de seleccionar la opción "Agregar Git al PATH de Windows" durante la instalación, para que puedas ejecutar Git desde la línea de comandos.</li>
+
+          <li>Asegúrate de seleccionar la opción <i>"Agregar Git al PATH de Windows"</i> durante la instalación, para que puedas ejecutar Git desde la línea de comandos.</li>
+
         </ul>
 
         <p>Una vez instalado Git en Windows, puedes abrir la línea de comandos (cmd) y verificar que Git está instalado y funcionando correctamente con el comando:</p>
 
         <pre>
-          git --version
+          git <b>--version</b> 
         </pre>
 
         <h4>macOS:</h4>
@@ -55,19 +58,19 @@
         </ul>
 
         <pre>
-          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+          /bin/bash -c <i>"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</i>
         </pre>
 
         <p>Instala Git con el siguiente comando:</p>
 
         <pre>
-          brew install git
+          brew <b>install</b> git
         </pre>
 
         <p>Una vez instalado Git en macOS, puedes verificar que está instalado y funcionando correctamente con el comando:</p>
 
         <pre>
-          git --version
+          git <b>--version</b>
         </pre>
 
         <h3>Configuración básica:</h3>
@@ -77,8 +80,8 @@
         <p>Para configurar tu nombre y dirección de correo electrónico, abre una línea de comandos y ejecuta los siguientes comandos, reemplazando "Tu nombre" y "tu-correo@example.com" con tus propios datos:</p>
 
         <pre>
-        git config --global user.name "Tu nombre"
-        git config --global user.email "tu-correo@example.com"
+        git <b>config</b> --global user.name <i>"Tu nombre"</i> 
+        git <b>config</b> --global user.email <i>"tu-correo@example.com"</i> 
         </pre>
 
         <h3>Configuración avanzada:</h3>
@@ -86,7 +89,7 @@
         <p>Git tiene muchas opciones de configuración avanzada para ajustar su comportamiento a tus necesidades. Puedes ver todas las opciones disponibles con el comando:</p>
 
         <pre>
-          git config --list
+          git <b>config</b> --list
         </pre>
 
         <h4>Algunas de las opciones más comunes incluyen:</h4>
@@ -103,14 +106,14 @@
         <h5>Puedes configurar estas opciones usando el siguiente comando:</h5>
 
         <pre>
-          git config --global (nombre-de-la-opción) (valor-de-la-opción)
+          git config <b>--global</b> (nombre-de-la-opción) (valor-de-la-opción)
         </pre>
 
         <p>Por ejemplo, para configurar el editor de texto Vim como el editor predeterminado de Git, puedes ejecutar el siguiente comando:
         </p>
 
         <pre>
-          git config --global core.editor vim
+          git  <b>config</b> --global core.editor vim
         </pre>
 
         <h3>Creación de un repositorio</h3>
@@ -126,19 +129,19 @@
         
 
         <pre>
-          git init
+          git <b>init</b> 
         </pre>
 
         <li>Ahora Git está listo para rastrear los cambios en los archivos de tu proyecto. Puedes agregar archivos al repositorio con el comando:</li>
 
         <pre>
-          git add (nombre-de-archivo)
+          git <b>add</b> (nombre-de-archivo)
         </pre>
 
         <li>Después de agregar los archivos, puedes confirmar los cambios con el comando:</li>
 
         <pre>
-          git commit -m "Mensaje de confirmación"
+          git <b>commit</b> -m "Mensaje de confirmación"
         </pre>
       </ul>
 
@@ -161,8 +164,8 @@
       <p>Después de crear el repositorio remoto en GitHub, puedes vincular tu repositorio local a él con los siguientes comandos:</p>
 
       <pre>
-        git remote add origin (URL-del-repositorio-remoto)
-          git push -u origin master          
+        git remote <b>add</b> origin (URL-del-repositorio-remoto)
+          git <b>push</b> -u origin master          
       </pre>
 
       <p>Reemplaza (URL-del-repositorio-remoto) con la URL de tu repositorio remoto en GitHub.</p>
@@ -180,53 +183,61 @@
           El tercer paso es enviar los cambios confirmados a un repositorio remoto con el comando git push. Debes especificar el nombre del repositorio remoto y la rama a la que deseas enviar los cambios. Por ejemplo, si el repositorio remoto se llama "origin" y deseas enviar los cambios a la rama "main", puedes usar el comando git push origin main.</li>
       </ul>
 
-      <h3>Ramificación y fusión (branching y merging)</h3>
+      <div>
 
-      <h4>Ramificación (Branching):</h4>
-
-      <p>La ramificación es el proceso de crear una nueva línea de desarrollo en un repositorio de Git. Cada rama representa una versión diferente del código que se puede modificar sin afectar el código en otras ramas.</p>
-
-      <p>Para crear una nueva rama en Git, ejecuta el siguiente comando:</p>
-
-      <pre>git branch (nombre-de-la-rama)
-      </pre>
-
-      <p>Para cambiar a la nueva rama que acabas de crear, ejecuta el siguiente comando:
-      </p>
-
-      <pre>
-        git checkout (nombre-de-la-rama)
-      </pre>
-
-      <p>O puedes hacer ambos pasos de forma abreviada con el comando:</p>
-
-      <pre>git checkout -b (nombre-de-la-rama)
-      </pre>
-
-      <p>Una vez que estás trabajando en una rama, puedes hacer todos los cambios que necesites en los archivos de tu proyecto sin afectar el código en otras ramas.</p>
-
-      <h4>Fusión (Merging):</h4>
-
-      <p>La fusión es el proceso de combinar dos o más ramas en un repositorio de Git. Cuando hayas terminado de trabajar en una rama y quieras integrar tus cambios en la rama principal (también conocida como la rama "master"), debes fusionar las dos ramas.</p>
-
-      <h5>Para fusionar dos ramas en Git, sigue los siguientes pasos:</h5>
-
-      <ul>
-        <li>Cambia a la rama en la que deseas integrar los cambios:</li>
-
-        <pre>git checkout (rama-a-fusionar-en)
-        </pre>
-
-        <li>Ejecuta el comando de fusión con el nombre de la rama que deseas fusionar:</li>
-
+        <h3>Ramificación y fusión (branching y merging)</h3>
+        <img src="../../assets/GIT-ram.png" class="img-fluid rounded" width="600px" height="400px" alt="">
+        <h4>Ramificación (Branching):</h4>
+  
+        <p>La ramificación es el proceso de crear una nueva línea de desarrollo en un repositorio de Git. Cada rama representa una versión diferente del código que se puede modificar sin afectar el código en otras ramas.</p>
+  
+        <p>Para crear una nueva rama en Git, ejecuta el siguiente comando:</p>
+  
         <pre>
-          git merge (nombre-de-la-rama-que-quieres-fusionar)
+          git <b>branch</b> (nombre-de-la-rama)
         </pre>
-      </ul>
+  
+        <p>
+          Para cambiar a la nueva rama que acabas de crear, ejecuta el siguiente comando:
+        </p>
+  
+        <pre>
+          git <b>checkout</b> (nombre-de-la-rama)
+        </pre>
+  
+        <p>O puedes hacer ambos pasos de forma abreviada con el comando:</p>
+  
+        <pre>
+          git <b>checkout</b> -b (nombre-de-la-rama)
+        </pre>
+  
+        <p>Una vez que estás trabajando en una rama, puedes hacer todos los cambios que necesites en los archivos de tu proyecto sin afectar el código en otras ramas.</p>
+  
+        <h4>Fusión (Merging):</h4>
+  
+        <p>La fusión es el proceso de combinar dos o más ramas en un repositorio de Git. Cuando hayas terminado de trabajar en una rama y quieras integrar tus cambios en la rama principal (también conocida como la rama "master"), debes fusionar las dos ramas.</p>
+  
+        <h5>Para fusionar dos ramas en Git, sigue los siguientes pasos:</h5>
+  
+        <ul>
+          <li>Cambia a la rama en la que deseas integrar los cambios:</li>
+  
+          <pre>git <b>checkout</b> (rama-a-fusionar-en)
+          </pre>
+  
+          <li>Ejecuta el comando de fusión con el nombre de la rama que deseas fusionar:</li>
+  
+          <pre>
+            git <b>merge</b> (nombre-de-la-rama-que-quieres-fusionar)
+          </pre>
+        </ul>
+  
+        <p>En algunos casos, puede haber conflictos durante el proceso de fusión. Esto sucede cuando Git no puede determinar automáticamente cómo combinar los cambios de dos ramas. En esos casos, Git te pedirá que resuelvas los conflictos manualmente.</p>
+  
+        <p>Para resolver un conflicto de fusión en Git, abre el archivo en conflicto en tu editor de texto y resuelve las diferencias manualmente. Una vez que hayas resuelto todos los conflictos, haz un commit para finalizar la fusión.</p>
+      </div>
 
-      <p>En algunos casos, puede haber conflictos durante el proceso de fusión. Esto sucede cuando Git no puede determinar automáticamente cómo combinar los cambios de dos ramas. En esos casos, Git te pedirá que resuelvas los conflictos manualmente.</p>
-
-      <p>Para resolver un conflicto de fusión en Git, abre el archivo en conflicto en tu editor de texto y resuelve las diferencias manualmente. Una vez que hayas resuelto todos los conflictos, haz un commit para finalizar la fusión.</p>
+     
 
       <h3>Trabajar con repositorios remotos</h3>
 
@@ -235,13 +246,13 @@
       <p>Para conectar tu repositorio local a un repositorio remoto existente, debes agregar una URL remota al repositorio local. Puedes hacerlo ejecutando el siguiente comando en tu consola:</p>
 
       <pre>
-        git remote add (nombre-remoto) (URL-del-repositorio-remoto)
+        git remote <b>add</b> (nombre-remoto) (URL-del-repositorio-remoto)
       </pre>
 
       <p>Por ejemplo, si deseas agregar un repositorio remoto llamado "origin" a tu repositorio local, ejecuta el siguiente comando:</p>
 
       <pre>
-        git remote add origin https://github.com/usuario/repositorio.git
+        git remote <b>add</b> origin https://github.com/usuario/repositorio.git
       </pre>
 
       <h4>Sincronización de cambios:</h4>
@@ -257,13 +268,13 @@
       <p>Por ejemplo, si deseas descargar los cambios del repositorio remoto y fusionarlos con tu rama actual en el repositorio local, ejecuta el siguiente comando:</p>
 
       <pre>
-        git pull (nombre-remoto) (nombre-rama)
+        git <b>pull</b> (nombre-remoto) (nombre-rama)
       </pre>
 
       <p>Si deseas enviar los cambios de tu repositorio local al repositorio remoto, ejecuta el siguiente comando:</p>
 
       <pre>
-        git push (nombre-remoto) (nombre-rama)
+        git <b>push</b> (nombre-remoto) (nombre-rama)
       </pre>
 
       <p>Es importante tener en cuenta que puede haber conflictos al sincronizar cambios entre el repositorio local y el remoto, especialmente si múltiples desarrolladores están trabajando en el mismo archivo o línea de código. En este caso, Git te pedirá que resuelvas manualmente los conflictos antes de continuar con la sincronización.</p>
@@ -279,23 +290,23 @@
       <ul>
         <li>Etiqueta ligera: es simplemente un puntero a un commit específico en el historial de Git. Para crear una etiqueta ligera, ejecuta el siguiente comando:</li>
         <pre>
-          git tag (nombre-etiqueta) (commit)
+          git <b>tag</b> (nombre-etiqueta) (commit)
         </pre>
 
         <li>Por ejemplo, si deseas crear una etiqueta ligera llamada "v1.0" para el commit con el ID abc123, ejecuta el siguiente comando:</li>
         <pre>
-          git tag v1.0 abc123
+          git <b>tag</b>  v1.0 abc123
         </pre>
 
         <li>Etiqueta anotada: es un objeto Git completo que incluye información adicional, como el nombre del etiquetador, la fecha y un mensaje. Para crear una etiqueta anotada, ejecuta el siguiente comando:</li>
 
         <pre>
-          git tag -a (nombre-etiqueta) (commit) -m "(mensaje)"
+          git <b>tag</b> -a (nombre-etiqueta) (commit) -m "(mensaje)"
         </pre>
 
         <li>Por ejemplo, si deseas crear una etiqueta anotada llamada "v1.0" para el commit con el ID abc123 con un mensaje de "Versión 1.0", ejecuta el siguiente comando:</li>
         <pre>
-          git tag -a v1.0 abc123 -m "Versión 1.0"
+          git <b>tag</b> -a v1.0 abc123 -m <i>"Versión 1.0"</i>
         </pre>
       </ul>
 
@@ -304,7 +315,7 @@
       <p>Para ver las etiquetas existentes en el repositorio, ejecuta el siguiente comando:</p>
 
       <pre>
-        git tag
+        git <b>tag</b> 
       </pre>
 
       <p>Esto mostrará una lista de todas las etiquetas en orden alfabético.</p>
@@ -312,7 +323,7 @@
       <p>Si deseas ver la información detallada de una etiqueta anotada en particular, ejecuta el siguiente comando:</p>
 
       <pre>
-        git show (nombre-etiqueta)
+        git <b>show</b> (nombre-etiqueta)
       </pre>
 
       <h4>Eliminar una etiqueta:</h4>
@@ -322,7 +333,7 @@
       <p>Por ejemplo, si deseas eliminar una etiqueta llamada "v1.0", ejecuta el siguiente comando:</p>
 
       <pre>
-        git tag -d v1.0
+        git <b>tag</b> -d v1.0
       </pre>
 
       <p>Es importante tener en cuenta que eliminar una etiqueta no afecta al historial de Git. Si una etiqueta se ha eliminado por error, puedes recrearla fácilmente.</p>
@@ -330,17 +341,17 @@
       <h3>Herramientas y recursos útiles de Git</h3>
 
       <ul>
-        <li>GitKraken: una herramienta gráfica para Git que proporciona una interfaz visual intuitiva para trabajar con repositorios, ramas, fusiones, etc.</li>
+        <li><mark>GitKraken:</mark> una herramienta gráfica para Git que proporciona una interfaz visual intuitiva para trabajar con repositorios, ramas, fusiones, etc.</li>
 
-        <li>GitHub: un servicio de alojamiento de repositorios Git en la nube que permite a los desarrolladores colaborar y compartir su código.</li>
+        <li><mark>GitHub:</mark> un servicio de alojamiento de repositorios Git en la nube que permite a los desarrolladores colaborar y compartir su código.</li>
 
-        <li>GitLab: una alternativa de GitHub que también proporciona alojamiento de repositorios Git en la nube y herramientas de colaboración.</li>
+        <li><mark>GitLab:</mark> una alternativa de GitHub que también proporciona alojamiento de repositorios Git en la nube y herramientas de colaboración.</li>
 
-        <li>Bitbucket: otra alternativa de GitHub que ofrece alojamiento de repositorios Git en la nube y herramientas de colaboración.</li>
+        <li><mark>Bitbucket:</mark> otra alternativa de GitHub que ofrece alojamiento de repositorios Git en la nube y herramientas de colaboración.</li>
 
-        <li>Git Bash: una terminal que permite a los usuarios de Windows utilizar la línea de comandos de Git como si estuvieran en un entorno Unix.</li>
+        <li><mark>Git Bash:</mark> una terminal que permite a los usuarios de Windows utilizar la línea de comandos de Git como si estuvieran en un entorno Unix.</li>
 
-        <li>Documentación oficial de Git: la documentación oficial de Git proporciona una guía completa para utilizar Git, incluyendo comandos, conceptos, flujos de trabajo, etc.</li>
+        <li><mark>Documentación oficial de Git:</mark> la documentación oficial de Git proporciona una guía completa para utilizar Git, incluyendo comandos, conceptos, flujos de trabajo, etc.</li>
 
       </ul>
 

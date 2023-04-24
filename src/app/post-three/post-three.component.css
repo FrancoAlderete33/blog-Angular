@@ -1,0 +1,87 @@
+h2{
+    color: rgb(255, 0, 68);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 2rem;
+    color: rgb(255, 0, 68);
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h4{
+    font-size: 1.5rem;
+    color: rgb(5, 154, 199);
+    letter-spacing: 1px;
+    font-weight: bold;
+ 
+} 
+/* Titulos */
+
+
+/* Lista */
+ul {
+    margin-top: 1rem;
+}
+
+li{
+    margin-top: 0.5rem;
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
+    transition:  0.4s ease-in;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+li:hover {
+    transform: scale(1.02);
+}
+/* Lista */
+
+
+
+/* Fragmentos de codigo  */
+pre {
+    font-size: 1.1rem;
+    background-color: rgb(255, 241, 240);
+    max-width: 500px;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+/* Fragmentos de codigo  */
+
+
+
+/* Parrafo - Negritas y Img  */
+p{
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+b{
+    font-size: 1rem;
+    color:rgb(23, 26, 220);
+}
+
+i {
+    font-size: 1rem;
+    color:rgb(43, 73, 226);
+}
+
+img {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+mark {
+    font-weight: bold;
+}
+/* Parrafo - Negritas y Img  */
