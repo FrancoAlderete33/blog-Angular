@@ -258,6 +258,9 @@
           <p>Supongamos que tenemos dos tablas: <i>"Clientes"</i>  y <i>"Pedidos"</i> . La tabla <i>"Clientes"</i>  contiene información sobre los clientes, mientras que la tabla <i>"Pedidos"</i> contiene información sobre los pedidos realizados por los clientes. Ambas tablas comparten una columna <i>"IDCliente"</i>  que se utiliza para relacionar los registros de ambas tablas.</p>
   
           <h4>INNER JOIN:</h4>
+
+          <img src="../../assets/Inner-join.png" width="600px" height="250" class="img-fluid"
+            alt="Iner Join">
   
           <p>La cláusula INNER JOIN se utiliza para mostrar solo los registros que tienen una coincidencia en ambas tablas. Por ejemplo, si queremos mostrar los nombres de los clientes y la información del pedido correspondiente solo para aquellos clientes que han realizado pedidos, podríamos utilizar la siguiente consulta SQL:</p>
   
@@ -271,6 +274,9 @@
           <p >En este ejemplo, la consulta SQL unirá las tablas <i>"Clientes"</i>  y <i>"Pedidos"</i>  utilizando la columna <i>"IDCliente"</i> . Solo se mostrarán los registros para los cuales existe una coincidencia en ambas tablas.</p>
   
           <h4>LEFT JOIN:</h4>
+
+          <img src="../../assets/Left-join.png" width="600px" height="250" class="img-fluid"
+            alt="Left Join">
   
           <p>La cláusula LEFT JOIN se utiliza para mostrar todos los registros de la tabla izquierda (primera tabla especificada en la consulta SQL) y los registros coincidentes de la tabla derecha (segunda tabla especificada en la consulta SQL). Por ejemplo, si queremos mostrar los nombres de todos los clientes y la información del pedido correspondiente, incluso si el cliente no ha realizado ningún pedido, podríamos utilizar la siguiente consulta SQL:</p>
   
@@ -284,6 +290,9 @@
           <p>En este ejemplo, la consulta SQL unirá las tablas <i>"Clientes"</i>  y <i>"Pedidos"</i>  utilizando la columna <i>"IDCliente"</i> . Se mostrarán todos los registros de la tabla <i>"Clientes"</i>  y los registros coincidentes de la tabla <i>"Pedidos"</i> . Si un cliente no ha realizado ningún pedido, la información del pedido será nula.</p>
   
           <h4>RIGHT JOIN:</h4>
+
+          <img src="../../assets/Right-Join.png" width="600px" height="250" class="img-fluid"
+            alt="Right Join">
   
           <p>La cláusula RIGHT JOIN se utiliza para mostrar todos los registros de la tabla derecha (segunda tabla especificada en la consulta SQL) y los registros coincidentes de la tabla izquierda (primera tabla especificada en la consulta SQL). Por ejemplo, si queremos mostrar la información de todos los pedidos y el nombre del cliente correspondiente, incluso si el cliente no existe en la tabla  <i>"Clientes"</i> , podríamos utilizar la siguiente consulta SQL:</p>
   
