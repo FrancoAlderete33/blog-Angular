@@ -7,7 +7,7 @@
       <!-- POSTS -->
       <div class="col-md-9">
         <!-- Title -->
-        <h2 class="text-danger">Angular</h2>
+        <h2 class="text-danger">Git</h2>
         <!-- Author -->
         <p class="lead">
           by
@@ -17,54 +17,333 @@
         <p>Publicado el dia 27 de Marzo, 2023 a las 16:15 PM</p>
 
         <!-- Preview Image -->
-        <img src="../../assets/Angular2.png" class="img-fluid rounded" alt="">
+        <img src="../../assets/GIT.png" class="img-fluid rounded" alt="">
         <!-- Post Content -->
-        <p class="lead">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer facilisis sollicitudin nisl non dignissim.
-          Phasellus hendrerit nisl et massa cursus suscipit. Donec pulvinar diam dolor, sit amet vestibulum purus
-          faucibus posuere. Proin a nunc et felis
-          aliquam sodales. Suspendisse dapibus ex a nulla faucibus, id venenatis risus facilisis. Nullam non aliquet
-          odio. Phasellus et neque feugiat nunc auctor pretium eu quis magna. Praesent mattis metus vitae ornare
-          hendrerit. Maecenas hendrerit
-          nibh id commodo rhoncus.
-        </p>
-        <p>
-          Vestibulum vehicula quam id quam lobortis convallis. Nullam quis pulvinar dolor. Pellentesque semper bibendum
-          facilisis. Ut vitae interdum tortor. Etiam mattis dui ut dui pharetra, ac auctor ligula rhoncus. Lorem ipsum
-          dolor sit amet, consectetur adipiscing
-          elit. Integer lacus leo, scelerisque id commodo sed, feugiat at mi. Donec quis ex justo.
-        </p>
-        <img src="../../assets/Angular-material.jpg" class="img-fluid rounded" alt="">
-        <p>
-          In dictum ex orci, vitae ultricies ipsum sagittis et. Nam in risus non mauris dictum consequat ac vitae nisl.
-          Vestibulum sed mauris gravida, rhoncus augue eget, finibus libero. Vivamus vel quam congue, vehicula elit eu,
-          congue nulla. Cras at dui sit amet
-          nibh pharetra aliquam. Morbi rhoncus metus metus, eget tincidunt libero mollis at. Donec ut sodales diam, quis
-          finibus libero. Vivamus posuere pharetra nibh, nec tempor nulla. Integer vel mauris rhoncus, iaculis augue
-          quis, scelerisque tellus.
-        </p>
+        <div>
+          <h3>¿Qué es Git?</h3>
 
-        <blockquote class="blockquote">
-          <p class="mb-0">
-            Nam nec lectus in nulla interdum ultrices mollis id dui. Duis sed sapien eu felis elementum scelerisque at
-            ac nibh. Pellentesque vehicula sed turpis eget pellentesque. Phasellus ut sapien hendrerit, egestas diam ac,
-            placerat felis. Vivamus pharetra odio
-            quis placerat pulvinar.
+          <p>Es un sistema de control de versiones de código abierto y gratuito que se utiliza para realizar un seguimiento de los cambios en los archivos y carpetas de un proyecto de software a lo largo del tiempo. Es una herramienta de colaboración esencial para los desarrolladores de software y otros profesionales de la informática, ya que permite a los usuarios trabajar juntos en el mismo código y mantener un historial completo y detallado de los cambios realizados en el proyecto.</p>
+
+          <p>
+            Con Git, los desarrolladores pueden realizar un seguimiento de los cambios en el código fuente, lo que les permite volver a versiones anteriores del proyecto en caso de errores o problemas. También pueden trabajar en diferentes ramas de un proyecto, lo que les permite experimentar con nuevas funciones y características sin afectar el código principal.
           </p>
-          <strong class="blockquote-footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt</strong>
-        </blockquote>
 
-        <p>
-          In hac habitasse platea dictumst. Curabitur vulputate, nunc sed tempus vehicula, turpis urna mattis augue, sed
-          lobortis urna magna id libero. Nam eget erat mattis, molestie lorem id, pharetra nisl. Suspendisse facilisis
-          odio volutpat, porta dui in, sollicitudin
-          augue. Integer id nisl ac neque pretium sollicitudin. In nibh lorem, faucibus ut mattis et, lacinia in ante.
-          Nunc turpis elit, pellentesque at vestibulum a, dignissim non felis. Nullam vitae facilisis ex. Aenean ut
-          volutpat quam. Proin ut
-          varius metus. Pellentesque ut arcu nibh. Donec pretium, orci sit amet semper feugiat, quam massa sagittis
-          felis, vel tempus neque nulla viverra magna. Pellentesque non blandit arcu, et blandit lacus. Quisque
-          fringilla odio sapien, a molestie
-          quam molestie nec. Suspendisse posuere mattis eros.
+          <p>Además, facilita la colaboración entre diferentes usuarios, ya que permite a los desarrolladores trabajar en sus propias copias del proyecto y luego fusionar los cambios en una sola versión del código. Esto hace que el trabajo en equipo sea más eficiente y reduce la posibilidad de conflictos y errores en el proyecto.</p>
+        </div>
+
+        <h3>Instalación de Git</h3>
+
+        <h4>Windows:</h4>
+
+        <ul>
+          <li>Descarga el instalador de Git desde la página web oficial: https://git-scm.com/download/win</li>
+          <li>Ejecuta el archivo descargado y sigue las instrucciones del asistente de instalación.</li>
+          <li>Asegúrate de seleccionar la opción "Agregar Git al PATH de Windows" durante la instalación, para que puedas ejecutar Git desde la línea de comandos.</li>
+        </ul>
+
+        <p>Una vez instalado Git en Windows, puedes abrir la línea de comandos (cmd) y verificar que Git está instalado y funcionando correctamente con el comando:</p>
+
+        <pre>
+          git --version
+        </pre>
+
+        <h4>macOS:</h4>
+
+        <ul>
+          <li>Abre la terminal de macOS.</li>
+          <li>Instala Homebrew, un gestor de paquetes para macOS, con el siguiente comando en la terminal:</li>
+        </ul>
+
+        <pre>
+          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+        </pre>
+
+        <p>Instala Git con el siguiente comando:</p>
+
+        <pre>
+          brew install git
+        </pre>
+
+        <p>Una vez instalado Git en macOS, puedes verificar que está instalado y funcionando correctamente con el comando:</p>
+
+        <pre>
+          git --version
+        </pre>
+
+        <h3>Configuración básica:</h3>
+
+        <p>Después de instalar Git, es importante configurar tu nombre y dirección de correo electrónico. Esto se debe a que Git utiliza esta información para registrar quién realiza los cambios en el código.</p>
+
+        <p>Para configurar tu nombre y dirección de correo electrónico, abre una línea de comandos y ejecuta los siguientes comandos, reemplazando "Tu nombre" y "tu-correo@example.com" con tus propios datos:</p>
+
+        <pre>
+        git config --global user.name "Tu nombre"
+        git config --global user.email "tu-correo@example.com"
+        </pre>
+
+        <h3>Configuración avanzada:</h3>
+
+        <p>Git tiene muchas opciones de configuración avanzada para ajustar su comportamiento a tus necesidades. Puedes ver todas las opciones disponibles con el comando:</p>
+
+        <pre>
+          git config --list
+        </pre>
+
+        <h4>Algunas de las opciones más comunes incluyen:</h4>
+
+        <ul>
+          <li>
+            core.editor: te permite configurar el editor de texto que Git utiliza para abrir y editar archivos de texto.</li>
+
+          <li>core.autocrlf: te permite configurar cómo Git maneja los saltos de línea de los archivos. Esta opción es importante si trabajas en un equipo que utiliza diferentes sistemas operativos.</li>
+          
+          <li>color.ui: te permite configurar si Git muestra salida en color o no.</li>
+        </ul>
+
+        <h5>Puedes configurar estas opciones usando el siguiente comando:</h5>
+
+        <pre>
+          git config --global (nombre-de-la-opción) (valor-de-la-opción)
+        </pre>
+
+        <p>Por ejemplo, para configurar el editor de texto Vim como el editor predeterminado de Git, puedes ejecutar el siguiente comando:
         </p>
+
+        <pre>
+          git config --global core.editor vim
+        </pre>
+
+        <h3>Creación de un repositorio</h3>
+
+        <p>Un repositorio de Git es un directorio donde se almacenan los archivos del proyecto, junto con todo el historial de cambios y las ramas de desarrollo.</p>
+
+        <h4>Creación de un repositorio local:</h4>
+
+        <ul>
+          <li>Abre una línea de comandos y navega hasta el directorio raíz de tu proyecto.</li>
+
+          <li>Inicializa un nuevo repositorio de Git en el directorio con el siguiente comando:</li>
+        
+
+        <pre>
+          git init
+        </pre>
+
+        <li>Ahora Git está listo para rastrear los cambios en los archivos de tu proyecto. Puedes agregar archivos al repositorio con el comando:</li>
+
+        <pre>
+          git add (nombre-de-archivo)
+        </pre>
+
+        <li>Después de agregar los archivos, puedes confirmar los cambios con el comando:</li>
+
+        <pre>
+          git commit -m "Mensaje de confirmación"
+        </pre>
+      </ul>
+
+      <h4>Creación de un repositorio remoto:</h4>
+
+      <p>Un repositorio remoto es un repositorio alojado en un servidor en línea (como GitHub, GitLab o Bitbucket). Puedes usar un repositorio remoto para colaborar con otros desarrolladores y para hacer copias de seguridad de tu código.</p>
+
+      <p>Para crear un repositorio remoto en GitHub, por ejemplo, sigue los siguientes pasos:</p>
+
+      <ul>
+        <li>Crea una cuenta en GitHub (si aún no tienes una).</li>
+
+        <li>Inicia sesión en tu cuenta de GitHub y haz clic en el botón "New" para crear un nuevo repositorio.</li>
+
+        <li>Asigna un nombre al repositorio y selecciona las opciones de configuración deseadas.</li>
+
+        <li>Haz clic en "Create repository" para crear el repositorio en GitHub.</li>
+      </ul>
+
+      <p>Después de crear el repositorio remoto en GitHub, puedes vincular tu repositorio local a él con los siguientes comandos:</p>
+
+      <pre>
+        git remote add origin (URL-del-repositorio-remoto)
+          git push -u origin master          
+      </pre>
+
+      <p>Reemplaza (URL-del-repositorio-remoto) con la URL de tu repositorio remoto en GitHub.</p>
+
+      <h3>El ciclo básico de trabajo en Git</h3>
+
+      <ul>
+        <li>Agregar cambios:
+          El primer paso es agregar los cambios realizados en los archivos a un área temporal llamada "área de preparación" o "index". Esto se hace con el comando git add. Por ejemplo, si quieres agregar todos los cambios realizados en los archivos de tu directorio actual, puedes usar el comando git add .</li>
+
+        <li>Confirmar cambios:
+          El segundo paso es confirmar los cambios agregados en el área de preparación con el comando git commit. Debes proporcionar un mensaje que describa brevemente los cambios realizados. Por ejemplo, si has agregado un archivo nuevo llamado "archivo.txt" y has hecho algunos cambios en "archivo2.txt", puedes confirmar los cambios con el comando git commit -m "Agregado archivo.txt y cambios en archivo2.txt".</li>
+
+        <li>Enviar cambios:
+          El tercer paso es enviar los cambios confirmados a un repositorio remoto con el comando git push. Debes especificar el nombre del repositorio remoto y la rama a la que deseas enviar los cambios. Por ejemplo, si el repositorio remoto se llama "origin" y deseas enviar los cambios a la rama "main", puedes usar el comando git push origin main.</li>
+      </ul>
+
+      <h3>Ramificación y fusión (branching y merging)</h3>
+
+      <h4>Ramificación (Branching):</h4>
+
+      <p>La ramificación es el proceso de crear una nueva línea de desarrollo en un repositorio de Git. Cada rama representa una versión diferente del código que se puede modificar sin afectar el código en otras ramas.</p>
+
+      <p>Para crear una nueva rama en Git, ejecuta el siguiente comando:</p>
+
+      <pre>git branch (nombre-de-la-rama)
+      </pre>
+
+      <p>Para cambiar a la nueva rama que acabas de crear, ejecuta el siguiente comando:
+      </p>
+
+      <pre>
+        git checkout (nombre-de-la-rama)
+      </pre>
+
+      <p>O puedes hacer ambos pasos de forma abreviada con el comando:</p>
+
+      <pre>git checkout -b (nombre-de-la-rama)
+      </pre>
+
+      <p>Una vez que estás trabajando en una rama, puedes hacer todos los cambios que necesites en los archivos de tu proyecto sin afectar el código en otras ramas.</p>
+
+      <h4>Fusión (Merging):</h4>
+
+      <p>La fusión es el proceso de combinar dos o más ramas en un repositorio de Git. Cuando hayas terminado de trabajar en una rama y quieras integrar tus cambios en la rama principal (también conocida como la rama "master"), debes fusionar las dos ramas.</p>
+
+      <h5>Para fusionar dos ramas en Git, sigue los siguientes pasos:</h5>
+
+      <ul>
+        <li>Cambia a la rama en la que deseas integrar los cambios:</li>
+
+        <pre>git checkout (rama-a-fusionar-en)
+        </pre>
+
+        <li>Ejecuta el comando de fusión con el nombre de la rama que deseas fusionar:</li>
+
+        <pre>
+          git merge (nombre-de-la-rama-que-quieres-fusionar)
+        </pre>
+      </ul>
+
+      <p>En algunos casos, puede haber conflictos durante el proceso de fusión. Esto sucede cuando Git no puede determinar automáticamente cómo combinar los cambios de dos ramas. En esos casos, Git te pedirá que resuelvas los conflictos manualmente.</p>
+
+      <p>Para resolver un conflicto de fusión en Git, abre el archivo en conflicto en tu editor de texto y resuelve las diferencias manualmente. Una vez que hayas resuelto todos los conflictos, haz un commit para finalizar la fusión.</p>
+
+      <h3>Trabajar con repositorios remotos</h3>
+
+      <h4>Conexión con un repositorio remoto:</h4>
+
+      <p>Para conectar tu repositorio local a un repositorio remoto existente, debes agregar una URL remota al repositorio local. Puedes hacerlo ejecutando el siguiente comando en tu consola:</p>
+
+      <pre>
+        git remote add (nombre-remoto) (URL-del-repositorio-remoto)
+      </pre>
+
+      <p>Por ejemplo, si deseas agregar un repositorio remoto llamado "origin" a tu repositorio local, ejecuta el siguiente comando:</p>
+
+      <pre>
+        git remote add origin https://github.com/usuario/repositorio.git
+      </pre>
+
+      <h4>Sincronización de cambios:</h4>
+
+      <p>Para sincronizar cambios entre tu repositorio local y el repositorio remoto, puedes usar los siguientes comandos:</p>
+
+      <ul>
+        <li>git pull: este comando descarga los cambios del repositorio remoto y los fusiona automáticamente con tu rama actual en el repositorio local.</li>
+
+        <li>git push: este comando envía los cambios de tu repositorio local al repositorio remoto.</li>  
+      </ul>
+
+      <p>Por ejemplo, si deseas descargar los cambios del repositorio remoto y fusionarlos con tu rama actual en el repositorio local, ejecuta el siguiente comando:</p>
+
+      <pre>
+        git pull (nombre-remoto) (nombre-rama)
+      </pre>
+
+      <p>Si deseas enviar los cambios de tu repositorio local al repositorio remoto, ejecuta el siguiente comando:</p>
+
+      <pre>
+        git push (nombre-remoto) (nombre-rama)
+      </pre>
+
+      <p>Es importante tener en cuenta que puede haber conflictos al sincronizar cambios entre el repositorio local y el remoto, especialmente si múltiples desarrolladores están trabajando en el mismo archivo o línea de código. En este caso, Git te pedirá que resuelvas manualmente los conflictos antes de continuar con la sincronización.</p>
+
+      <h3>Etiquetas (tags)</h3>
+
+      <p>Las tags en Git son punteros a puntos específicos en el historial del repositorio. Se usan a menudo para marcar versiones de un proyecto.</p>
+
+      <h4>Crear una etiqueta:</h4>
+
+      <p>Para crear una etiqueta en Git, puedes usar el comando git tag. Hay dos tipos de etiquetas: ligera (lightweight) y anotada (annotated).</p>
+
+      <ul>
+        <li>Etiqueta ligera: es simplemente un puntero a un commit específico en el historial de Git. Para crear una etiqueta ligera, ejecuta el siguiente comando:</li>
+        <pre>
+          git tag (nombre-etiqueta) (commit)
+        </pre>
+
+        <li>Por ejemplo, si deseas crear una etiqueta ligera llamada "v1.0" para el commit con el ID abc123, ejecuta el siguiente comando:</li>
+        <pre>
+          git tag v1.0 abc123
+        </pre>
+
+        <li>Etiqueta anotada: es un objeto Git completo que incluye información adicional, como el nombre del etiquetador, la fecha y un mensaje. Para crear una etiqueta anotada, ejecuta el siguiente comando:</li>
+
+        <pre>
+          git tag -a (nombre-etiqueta) (commit) -m "(mensaje)"
+        </pre>
+
+        <li>Por ejemplo, si deseas crear una etiqueta anotada llamada "v1.0" para el commit con el ID abc123 con un mensaje de "Versión 1.0", ejecuta el siguiente comando:</li>
+        <pre>
+          git tag -a v1.0 abc123 -m "Versión 1.0"
+        </pre>
+      </ul>
+
+      <h4>Ver etiquetas:</h4>
+
+      <p>Para ver las etiquetas existentes en el repositorio, ejecuta el siguiente comando:</p>
+
+      <pre>
+        git tag
+      </pre>
+
+      <p>Esto mostrará una lista de todas las etiquetas en orden alfabético.</p>
+
+      <p>Si deseas ver la información detallada de una etiqueta anotada en particular, ejecuta el siguiente comando:</p>
+
+      <pre>
+        git show (nombre-etiqueta)
+      </pre>
+
+      <h4>Eliminar una etiqueta:</h4>
+
+      <p>Para eliminar una etiqueta existente en Git, puedes usar el comando git tag con la opción -d.</p>
+
+      <p>Por ejemplo, si deseas eliminar una etiqueta llamada "v1.0", ejecuta el siguiente comando:</p>
+
+      <pre>
+        git tag -d v1.0
+      </pre>
+
+      <p>Es importante tener en cuenta que eliminar una etiqueta no afecta al historial de Git. Si una etiqueta se ha eliminado por error, puedes recrearla fácilmente.</p>
+
+      <h3>Herramientas y recursos útiles de Git</h3>
+
+      <ul>
+        <li>GitKraken: una herramienta gráfica para Git que proporciona una interfaz visual intuitiva para trabajar con repositorios, ramas, fusiones, etc.</li>
+
+        <li>GitHub: un servicio de alojamiento de repositorios Git en la nube que permite a los desarrolladores colaborar y compartir su código.</li>
+
+        <li>GitLab: una alternativa de GitHub que también proporciona alojamiento de repositorios Git en la nube y herramientas de colaboración.</li>
+
+        <li>Bitbucket: otra alternativa de GitHub que ofrece alojamiento de repositorios Git en la nube y herramientas de colaboración.</li>
+
+        <li>Git Bash: una terminal que permite a los usuarios de Windows utilizar la línea de comandos de Git como si estuvieran en un entorno Unix.</li>
+
+        <li>Documentación oficial de Git: la documentación oficial de Git proporciona una guía completa para utilizar Git, incluyendo comandos, conceptos, flujos de trabajo, etc.</li>
+
+      </ul>
+
+
 
       </div>
