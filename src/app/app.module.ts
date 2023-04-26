@@ -14,6 +14,7 @@ import { CarruselComponent } from './carrusel/carrusel.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { PostFourComponent } from './post-four/post-four.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

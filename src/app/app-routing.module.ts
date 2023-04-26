@@ -9,6 +9,7 @@ import { PostThreeComponent } from './post-three/post-three.component';
 import { PostTwoComponent } from './post-two/post-two.component';
 import { PostFourComponent } from './post-four/post-four.component';
 
+
 const routes: Routes = [
   { path: "", pathMatch: 'full', redirectTo: 'home' },
   { path: 'home', component: HomeComponent },
