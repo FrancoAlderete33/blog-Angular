@@ -7,6 +7,7 @@ import { Page404Component } from './page404/page404.component';
 import { PostOneComponent } from './post-one/post-one.component';
 import { PostThreeComponent } from './post-three/post-three.component';
 import { PostTwoComponent } from './post-two/post-two.component';
+import { PostFourComponent } from './post-four/post-four.component';
 
 const routes: Routes = [
   { path: "", pathMatch: 'full', redirectTo: 'home' },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'post-1', component: PostOneComponent },
   { path: 'post-2', component: PostTwoComponent },
   { path: 'post-3', component: PostThreeComponent },
+  { path: 'post-4', component: PostFourComponent },
   { path: '**', component: Page404Component }
 ];
 

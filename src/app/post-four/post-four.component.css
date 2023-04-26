@@ -1,0 +1,23 @@
+
+/* Mark */
+mark {
+    font-weight: bold;
+    font-size: 1.05rem;
+    letter-spacing: 1px;
+    border-radius: 1rem;
+    padding: 0.3rem;
+}
+.mark{
+    background-color: rgba(127, 255, 212, 0.5);
+    
+}
+.mark1{
+    background-color: rgba(255, 127, 253, 0.5);
+}
+.mark2{
+    background-color: rgba(255, 127, 155, 0.5);
+}
+.mark3{
+    background-color: rgba(127, 255, 127, 0.5);
+}
+/* Mark */
