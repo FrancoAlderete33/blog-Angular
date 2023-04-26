@@ -4,6 +4,7 @@
   margin-top: 1rem;
 }
 
+/* Titles and p */
 h1,
 h2,
 h3 {
@@ -18,6 +19,12 @@ h4 {
 h4:hover {
   transform: scale(1.1);
 }
+
+i {
+  color: blue;
+}
+/* Titles and p  */
+
 
 
 /* Gentleman Programming Section */

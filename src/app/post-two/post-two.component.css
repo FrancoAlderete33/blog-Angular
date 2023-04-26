@@ -83,6 +83,11 @@ img {
 
 mark {
     font-weight: bold;
+    font-size: 1.05rem;
+    letter-spacing: 1px;
+    border-radius: 1rem;
+    padding: 0.3rem;
+    background-color: rgba(204, 255, 127, 0.5);
 }
 /* Parrafo - Negritas y Img  */
 

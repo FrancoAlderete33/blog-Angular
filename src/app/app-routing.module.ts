@@ -13,7 +13,6 @@ import { PostFourComponent } from './post-four/post-four.component';
 const routes: Routes = [
   { path: "", pathMatch: 'full', redirectTo: 'home' },
   { path: 'home', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'post-1', component: PostOneComponent },
   { path: 'post-2', component: PostTwoComponent },

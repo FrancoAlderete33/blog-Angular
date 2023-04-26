@@ -8,11 +8,7 @@
       <div class="col-md-9">
         <!-- Title -->
         <h1 class="text-success">LINQ</h1>
-        <!-- Author -->
-        <p class="lead">
-          by
-          <a routerLink="['/about']" class="text-decoration-none">Franco Alderete</a>
-        </p>
+     
         <!-- Date/Time -->
         <p>Publicado el dia 22 de Marzo, 2023 a las 10:30 AM</p>
 
@@ -25,10 +21,10 @@
             </p>
 
             <p>
-              Linq fue introducido por Microsoft en el año 2007 como parte de la plataforma .NET Framework 3.5 y ha sido ampliamente adoptado desde entonces. Con Linq, los desarrolladores pueden escribir consultas de manera similar a como lo harían con SQL en una base de datos, pero en lugar de escribir consultas para una base de datos, las consultas se escriben para cualquier colección de objetos en memoria, como una lista o un arreglo.
+              <b>Linq</b> fue introducido por Microsoft en el año 2007 como parte de la plataforma <b>.NET Framework 3.5</b> y ha sido ampliamente adoptado desde entonces. Con Linq, los desarrolladores pueden escribir consultas de manera similar a como lo harían con SQL en una base de datos, pero en lugar de escribir consultas para una base de datos, las consultas se escriben para cualquier colección de objetos en memoria, como una lista o un arreglo.
             </p>
 
-            <p>La sintaxis de Linq es fácil de aprender y de utilizar, lo que permite a los desarrolladores escribir código más legible y mantenible. Además, Linq permite una mayor productividad, ya que reduce la cantidad de código necesario para realizar operaciones comunes de manipulación de datos.
+            <p>La sintaxis de <b>Linq</b> es fácil de aprender y de utilizar, lo que permite a los desarrolladores escribir código más legible y mantenible. Además, Linq permite una mayor productividad, ya que reduce la cantidad de código necesario para realizar operaciones comunes de manipulación de datos.
             </p>
         </div>
 
@@ -50,18 +46,19 @@
         <div>
           <h3>Consultas simples con Linq</h3>
 
-          <p>Selección de elementos con select: La cláusula select se utiliza para seleccionar elementos específicos de una fuente de datos. Por ejemplo, para seleccionar solo los nombres de una lista de objetos, podríamos escribir la consulta como:</p>
+          <p><b>Selección de elementos con select:</b> La cláusula <i>select</i> se utiliza para seleccionar elementos específicos de una fuente de datos. Por ejemplo, para seleccionar solo los nombres de una lista de objetos, podríamos escribir la consulta como:</p>
 
           <pre>
 <b>var</b> nombres = <b>from</b> persona <b>in</b> personas
                 <b>select</b>  persona.Nombre;
           </pre>
 
-          <p>Aquí personas es la fuente de datos y persona.Nombre especifica que solo queremos seleccionar el atributo Nombre de cada objeto persona.</p>
+          <p>Aquí <b>personas</b> es la fuente de datos y <b>persona.Nombre</b> especifica que solo queremos seleccionar el atributo <i>Nombre</i> de cada objeto <i>persona</i>.</p>
 
           <h4>Filtrado de elementos con WHERE:</h4>
 
-          <p>La cláusula where se utiliza para filtrar elementos de una fuente de datos en base a una condición. Por ejemplo, para seleccionar solo las personas con una edad mayor a 18 años, podríamos escribir la consulta como:</p>
+          <p>La cláusula <b>where</b> se utiliza para filtrar elementos de una fuente de datos en base a una condición. Por ejemplo, para seleccionar solo las personas con una edad mayor a 18 años, podríamos escribir la consulta como:
+          </p>
 
           <pre>
     <b>var</b> personasMayoresDeEdad = <b>from</b> persona <b>in</b> personas
@@ -73,7 +70,7 @@
 
           <h4>Ordenamiento de elementos con ORDERBY:</h4>
 
-          <p>La cláusula orderby se utiliza para ordenar elementos de una fuente de datos en base a un atributo específico. Por ejemplo, para ordenar una lista de personas por edad de forma ascendente, podríamos escribir la consulta como:</p>
+          <p>La cláusula <b>orderby</b> se utiliza para ordenar elementos de una fuente de datos en base a un atributo específico. Por ejemplo, para ordenar una lista de personas por edad de forma ascendente, podríamos escribir la consulta como:</p>
 
           <pre>
 <b>var</b> personasOrdenadasPorEdad = <b>from</b> persona <b>in</b> personas
@@ -81,11 +78,11 @@
                                <b>select</b> persona;
           </pre>
 
-          <p>Aquí personas es la fuente de datos y orderby <i>persona.Edad</i>  especifica que queremos ordenar los objetos persona en base al atributo  Edad.</p>
+          <p>Aquí personas es la fuente de datos y <b>orderby persona.Edad</b> especifica que queremos ordenar los objetos persona en base al atributo Edad.</p>
 
           <h4>Agrupamiento de elementos con GROUPBY:</h4>
 
-          <p>La cláusula groupby se utiliza para agrupar elementos de una fuente de datos en base a un atributo específico. Por ejemplo, para agrupar una lista de personas por su ciudad de origen, podríamos escribir la consulta como:</p>
+          <p><b>La cláusula groupby</b> se utiliza para agrupar elementos de una fuente de datos en base a un atributo específico. Por ejemplo, para agrupar una lista de personas por su ciudad de origen, podríamos escribir la consulta como:</p>
 
           <pre>
           <b>var</b> personasAgrupadasPorCiudad = <b>from</b> persona <b>in</b> personas
@@ -102,7 +99,7 @@
     
               <h4>Combinación de múltiples fuentes de datos con join:</h4>
     
-              <p>La cláusula join se utiliza para combinar dos fuentes de datos en base a un atributo común. Por ejemplo, para obtener una lista de productos junto con su categoría correspondiente, podríamos escribir la consulta como:</p>
+              <p>La cláusula <i>join</i> se utiliza para combinar dos fuentes de datos en base a un atributo común. Por ejemplo, para obtener una lista de productos junto con su categoría correspondiente, podríamos escribir la consulta como:</p>
     
               <pre>
           <b>var</b> productosYCategorias = <b>from</b> producto <b>in</b> productos
@@ -168,7 +165,7 @@
 
             <h3>Conclusión y una CheatSheet de regalo</h3>
 
-            <p> Linq es una herramienta muy poderosa para trabajar con datos en .NET. Permite escribir consultas de manera sencilla y legible, y proporciona una gran cantidad de operadores y métodos para manipular y transformar datos. Además, Linq se integra bien con las bases de datos y puede ser utilizado para realizar consultas en SQL Server, MySQL y otras bases de datos.</p>
+            <p> <i>Linq</i> es una herramienta muy poderosa para trabajar con datos en <b>.NET</b>. Permite escribir consultas de manera sencilla y legible, y proporciona una gran cantidad de operadores y métodos para manipular y transformar datos. Además, <i>Linq</i> se integra bien con las bases de datos y puede ser utilizado para realizar consultas en <b>SQL Server</b>, <b>MySQL</b> y otras bases de datos.</p>
 
             <img src="../../assets/Post-2/CheatSheet LINQ.jpg" alt="CheatSheet Linq" width="700px" height="500px" class="img-fluid" >
           </div>

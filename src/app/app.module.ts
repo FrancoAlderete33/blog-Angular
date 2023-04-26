@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,7 +12,7 @@ import { PostOneComponent } from './post-one/post-one.component';
 import { PostTwoComponent } from './post-two/post-two.component';
 import { PostThreeComponent } from './post-three/post-three.component';
 import { Page404Component } from './page404/page404.component';
-import { CarruselComponent } from './carrusel/carrusel.component';
+import { CarruselComponent } from './scrollWords/carrusel.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { PostFourComponent } from './post-four/post-four.component';
 
@@ -31,7 +33,9 @@ import { PostFourComponent } from './post-four/post-four.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

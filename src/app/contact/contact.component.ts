@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { FormGroup } from '@angular/forms';
+
 
 @Component({
   selector: 'app-contact',
@@ -6,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
+form!: FormGroup;
+
+ngOnInit():void{
+
+ 
+}
+
 
 }

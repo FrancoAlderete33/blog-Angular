@@ -51,6 +51,11 @@ b{
 
 mark {
     font-weight: bold;
+    font-size: 1.05rem;
+    letter-spacing: 1px;
+    border-radius: 1rem;
+    padding: 0.3rem;
+    background-color: rgba(127, 255, 161, 0.5);
 }
 
 
